@@ -31,7 +31,7 @@ host('wejam.in')
     ->set('deploy_path', '/var/www/wejam.in');
 
 // Tasks
-task('npm', function () {
+task('npm:production', function () {
     if (has('previous_release')) {
         run('cp -R {{previous_release}}/node_modules {{release_path}}/node_modules');
     }
@@ -46,7 +46,7 @@ task('build', function () {
 });
 
 // Install npm
-after('deploy:update_code', 'npm:install');
+//after('deploy:update_code', 'npm:production');
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
