@@ -2,6 +2,7 @@
 namespace Deployer;
 
 require 'recipe/laravel.php';
+require 'recipe/npm.php';
 
 // Project name
 set('application', 'WEJAM');
@@ -32,6 +33,10 @@ task('artisan:optimize', function () {});
 task('build', function () {
     run('cd {{release_path}} && build');
 });
+
+// Install npm
+after('deploy:update_code', 'npm:install');
+after('deploy:update_code', 'npm:run production');
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
