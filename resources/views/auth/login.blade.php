@@ -14,14 +14,14 @@
                     @endif
 
                     <div class="field">
-                    <label class="label">{{ __('Email') }}</label>
+                    <label class="label">{{ __('Email/Username') }}</label>
                     <div class="control has-icons-left">
-                        <input name="email" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email" placeholder="{{__('Your Email')}}" value="{{ old('email') }}">
+                        <input name="login" class="input is-large {{  $errors->has('username') ? 'is-danger' : '' }}" type="text" placeholder="{{__('Your Email or Username')}}" value="{{ old('login') }}">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
                     </div>
-                    @error('email')
+                    @error('username')
                     <p class="help is-danger">{{ $message }}</p>
                     @enderror
                     </div>
