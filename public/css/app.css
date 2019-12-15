@@ -12435,3 +12435,8 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.brand-text {
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 32px;
+}
+
