@@ -8,10 +8,15 @@
             <div class="box column is-one-third">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
+
+                    @if($errors->any())
+                        <div class="notification is-danger">{{ $errors->first() }}</div>
+                    @endif
+
                     <div class="field">
                     <label class="label">{{ __('Email') }}</label>
                     <div class="control has-icons-left">
-                        <input class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email" placeholder="{{__('Your Email')}}">
+                        <input name="email" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email" placeholder="{{__('Your Email')}}" value="{{ old('email') }}">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
@@ -23,7 +28,7 @@
                     <div class="field">
                         <label class="label">{{ __('Password') }}</label>
                         <p class="control has-icons-left">
-                        <input class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password" placeholder="{{__('Your Password')}}">
+                        <input name="password" class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password" placeholder="{{__('Your Password')}}" value="{{ old('password') }}">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-lock"></i>
                             </span>
