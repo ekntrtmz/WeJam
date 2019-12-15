@@ -81,7 +81,7 @@
                 @else
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
-                        {{ Auth::user()->name }}
+                        {{ Auth::user()->username }}
                     </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
