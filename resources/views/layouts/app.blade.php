@@ -65,6 +65,36 @@
                 </div>
 
                 <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <button class="button is-static">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    </button>
+                                </p>
+                                <p class="control is-expanded">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu-city">
+                                        <span>Barcelona</span>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu-city" role="menu">
+                            <div class="dropdown-content">
+                            <div class="dropdown-item">
+                                <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 @guest
                 <div class="navbar-item">
                     <div class="buttons">
@@ -73,7 +103,7 @@
                         <strong>{{ __('Register') }}</strong>
                     </a>
                     @endif
-                    <a class="button is-light" href="{{ route('login') }}">
+                    <a class="button is-primary is-outlined is-inverted" href="{{ route('login') }}">
                         {{ __('Login') }}
                     </a>
                     </div>
@@ -85,16 +115,19 @@
                     </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
-                        Profile
+                        <span class="icon is-small"><i class="fas fa-user-circle"></i></span>
+                        <span>Profile</span>
                         </a>
                         <a class="navbar-item">
-                        Settings
+                        <span class="icon is-small"><i class="fas fa-cog"></i></span>
+                        <span>Settings</span>
                         </a>
                         <hr class="navbar-divider">
                         <a
                             class="navbar-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
+                        <span class="icon is-small"><i class="fas fa-sign-out-alt"></i></span>
+                        <span>{{ __('Logout') }}</span>
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
