@@ -18,7 +18,7 @@
                     <div class="control has-icons-left">
                         <input name="login" class="input is-large {{  $errors->has('username') ? 'is-danger' : '' }}" type="text" placeholder="{{__('Your Email or Username')}}" value="{{ old('login') }}">
                         <span class="icon is-small is-left">
-                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-user"></i>
                         </span>
                     </div>
                     @error('username')

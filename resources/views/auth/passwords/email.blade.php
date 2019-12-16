@@ -21,7 +21,7 @@
                                     <div class="control has-icons-left">
                                         <input name="email" value="{{ old('email') }}" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email" placeholder="{{__('Your Email')}}">
                                         <span class="icon is-small is-left">
-                                            <i class="fas fa-lock"></i>
+                                            <i class="fas fa-at"></i>
                                         </span>
                                     </div>
                                     @error('email')
