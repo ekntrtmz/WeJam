@@ -9,7 +9,7 @@
         </div>
 
         <div class="columns is-centered">
-            <div class="box column is-one-third">
+            <div class="box column is-5">
                 <form method="POST" action="{{ route('password.update') }}">
                         @csrf
                         <input type="hidden" name="token" value="{{ $token }}">

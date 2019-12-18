@@ -9,7 +9,7 @@
             </div>
 
             <div class="columns is-centered">
-                <div class="box column is-4">
+                <div class="box column is-5">
 
                     @if (session('status'))
                         <div class="notification is-success">

@@ -24,10 +24,15 @@
 .brand-wrapper {
   text-align: center;
   padding: 45px;
+  }
 
   .brand-text {
     font-size: 38px;
     color: $primary;
+
+    &:hover {
+      color: #ecf0f1;
+
   }
 }
 

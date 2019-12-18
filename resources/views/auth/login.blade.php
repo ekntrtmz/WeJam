@@ -9,12 +9,16 @@
         </div>
 
         <div class="columns is-centered">
-            <div class="box column is-one-third">
+            <div class="box column is-5">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
                     @if($errors->any())
-                        <div class="notification is-danger">{{ $errors->first() }}</div>
+                        <div class="notification is-danger">
+                            <span class="icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </span>
+                            {{ $errors->first() }}</div>
                     @endif
 
                     <div class="field">
