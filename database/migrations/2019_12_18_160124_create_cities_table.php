@@ -15,6 +15,14 @@ class CreateCitiesTable extends Migration
     {
         Schema::create('cities', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            //  Name of the city
+            $table->string('short');
+            //  Shortname (airport abbreviation, e.g. BCN)
+            $table->string('banner_path')->nullable();
+            //  Path to image of a city banner
+            $table->string('country_code');
+            //  Country Code of the country where the city is located
             $table->timestamps();
         });
     }

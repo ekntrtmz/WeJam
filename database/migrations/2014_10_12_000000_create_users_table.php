@@ -21,6 +21,30 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->boolean('isAdmin')->default(false);
+            //  True if is admin
+            $table->string('avatar_path')->nullable();
+            //  Path to avatar image of the user
+
+            $table->string('social_alias_fb')->nullable();
+            //  Social alias on Facebook
+            $table->string('social_url_fb')->nullable();
+            //  Social link to Facebook
+
+            $table->string('social_alias_ig')->nullable();
+            //  Social alias on Instagram
+            $table->string('social_url_ig')->nullable();
+            //  Social link to Instagram
+
+            $table->string('social_alias_sc')->nullable();
+            //  Social alias on Soundcloud
+            $table->string('social_url_sc')->nullable();
+            //  Social link to Soundcloud
+
+            $table->string('social_alias_sf')->nullable();
+            //  Social alias on Spotify
+            $table->string('social_url_sf')->nullable();
+            //  Social link to Spotify
+
             $table->timestamps();
         });
     }

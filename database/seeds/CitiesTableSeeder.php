@@ -14,32 +14,39 @@ class CitiesTableSeeder extends Seeder
         //
         DB::table('cities')->insert([
             [
-                'title' => 'Barcelona',
-                'abrv' => 'bcn'
+                'name' => 'Barcelona',
+                'short' => 'bcn',
+                'country_code' => 'ES'
             ],
             [
-                'title' => 'Paris',
-                'abrv' => 'par'
+                'name' => 'Paris',
+                'short' => 'par',
+                'country_code' => 'FR'
             ],
             [
-                'title' => 'London',
-                'abrv' => 'ldn'
+                'name' => 'London',
+                'short' => 'ldn',
+                'country_code' => 'GB'
             ],
             [
-                'title' => 'Roma',
-                'abrv' => 'rme'
+                'name' => 'Roma',
+                'short' => 'rme',
+                'country_code' => 'IT'
             ],
             [
-                'title' => 'Istanbul',
-                'abrv' => 'ist'
+                'name' => 'Istanbul',
+                'short' => 'ist',
+                'country_code' => 'TR'
             ],
             [
-                'title' => 'Amsterdam',
-                'abrv' => 'ams'
+                'name' => 'Amsterdam',
+                'short' => 'ams',
+                'country_code' => 'NL'
             ],
             [
-                'title' => 'Tel Aviv',
-                'abrv' => 'tlv'
+                'name' => 'Tel Aviv',
+                'short' => 'tlv',
+                'country_code' => 'IS'
             ]
         ]);
 
