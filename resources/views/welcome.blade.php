@@ -28,13 +28,13 @@
                 <welcome-hero>
                     <template v-slot:welcome-navigation>
                     @if (Route::has('login'))
-                    <div class="top-right links">
+                    <div class="top-right ">
                         @auth
                             <a href="{{ url('/home') }}">
                                 {{ __('Home') }}
                             </a>
                         @else
-                            <a href="{{ route('login') }}">
+                            <a class="button is-primary is-inverted is-outlined" href="{{ route('login') }}">
                                 {{ __('Login') }}
                             </a>
 

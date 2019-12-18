@@ -191,10 +191,6 @@ export default {
                 100% {filter: blur(2px);}
             }
 
-            .top-right {
-                display: none;
-            }
-
             @media only screen and (max-width:48em) {
                 .title {
                     font-size: 42px;
