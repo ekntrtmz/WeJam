@@ -11,11 +11,20 @@
 |
 */
 
+//  Landingpage
 Route::get('/', function () {
+
+    //  Redirect user to home if logged in
+    if (Auth::check()) {
+        return redirect('/home');
+    }
+
     return view('welcome');
 });
 
+//  Laravel's built-in Auth package
 Auth::routes([
+    //  Disable Register temporarly
     'register' => false
 ]);
 
