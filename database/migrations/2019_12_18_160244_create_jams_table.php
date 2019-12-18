@@ -15,15 +15,6 @@ class CreateJamsTable extends Migration
     {
         Schema::create('jams', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('description');
-            $table->dateTime('jam_date_time');
-            $table->enum('type', ['public', 'secret'])->default('public');
-            $table->integer('pin')->nullable();
-
-            //  location_cty
-            //  location_latitude
-            //  location?longititude
             $table->timestamps();
         });
     }
