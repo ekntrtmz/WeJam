@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="section">
     <div class="container">
-        <h1 class="title has-text-centered">{{ __('Reset Password') }}</h1>
+
+        <div class="brand-wrapper">
+                <a href="/" class="brand-text">wejam</a>
+        </div>
+
         <div class="columns is-centered">
             <div class="box column is-one-third">
                 <form method="POST" action="{{ route('password.update') }}">
@@ -13,9 +16,9 @@
 
                         <div class="field">
                             <div class="control">
-                                <label class="label">{{ __('Email') }}</label>
+                                <label class="label">{{ __('Your Email Address') }}</label>
                                 <div class="control has-icons-left">
-                                    <input name="email" value="{{ $email ?? old('email') }}" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email" placeholder="{{__('Your Email')}}">
+                                    <input name="email" value="{{ $email ?? old('email') }}" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-at"></i>
                                     </span>
@@ -27,9 +30,9 @@
                         </div>
                         <div class="field">
                             <div class="control">
-                                <label class="label">{{ __('New Password') }}</label>
+                                <label class="label">{{ __('Your new Password') }}</label>
                                 <div class="control has-icons-left">
-                                    <input name="password" class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password" placeholder="{{__('Your Password')}}">
+                                    <input name="password" class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-lock"></i>
                                     </span>
@@ -41,9 +44,9 @@
                         </div>
                         <div class="field">
                             <div class="control">
-                                <label class="label">{{ __('Confirm New Password') }}</label>
+                                <label class="label">{{ __('Confirm new Password') }}</label>
                                 <div class="control has-icons-left">
-                                    <input name="password_confirmation" class="input is-large {{  $errors->has('password_confirmation') ? 'is-danger' : '' }}" type="password" placeholder="{{__('Confirm Password')}}">
+                                    <input name="password_confirmation" class="input is-large {{  $errors->has('password_confirmation') ? 'is-danger' : '' }}" type="password">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-lock"></i>
                                     </span>
@@ -55,7 +58,7 @@
                         </div>
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary is-medium" type="submit">
+                                <button class="button is-primary is-medium is-fullwidth" type="submit">
                                     {{__('Reset Password')}}
                                 </button>
                             </div>
