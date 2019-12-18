@@ -89,6 +89,13 @@
                 @else
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
+                        <span class="icon" style="margin-right:7px;margin-left:7px;">
+                            @if(Auth::user()->isAdmin)
+                            <i class="fas fa-user-shield fa-border" ></i>
+                            @else
+                            <i class="fas fa-user-circle" ></i>
+                            @endif
+                        </span>
                         {{ Auth::user()->username }}
                     </a>
                     <div class="navbar-dropdown">
