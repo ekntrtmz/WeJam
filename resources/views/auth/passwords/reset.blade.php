@@ -32,7 +32,7 @@
                             <div class="control">
                                 <label class="label">{{ __('Your new Password') }}</label>
                                 <div class="control has-icons-left">
-                                    <input name="password" class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password">
+                                    <input autofocus name="password" class="input is-large {{  $errors->has('password') ? 'is-danger' : '' }}" type="password">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-lock"></i>
                                     </span>

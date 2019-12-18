@@ -23,7 +23,7 @@
                                 <div class="control">
                                     <label class="label">{{ __('Your Email') }}</label>
                                     <div class="control has-icons-left">
-                                        <input name="email" value="{{ old('email') }}" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email">
+                                        <input autofocus name="email" value="{{ old('email') }}" class="input is-large {{  $errors->has('email') ? 'is-danger' : '' }}" type="email">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-at"></i>
                                         </span>
