@@ -89,9 +89,10 @@ class CityController extends Controller
      * @param  \App\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function global(City $city)
+    public function global()
     {
-        //
+        return City::all();
+        // /return view('cities.cities')->with('cities', City::all());
     }
 
     /**
@@ -102,6 +103,9 @@ class CityController extends Controller
      */
     public function city(City $city)
     {
-        //
+        //return $city;
+        $city->load('jams');
+        //  Load relationship data to jams
+        dd($city);
     }
 }
