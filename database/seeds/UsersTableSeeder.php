@@ -20,11 +20,13 @@ class UsersTableSeeder extends Seeder
             'isAdmin' => true
            ],
            [
-           'username' => 'ekn',
-           'email' => 'otra@ekn.dev',
-           'password' => bcrypt('12345'),
-           'isAdmin' => false
-            ]
+            'username' => 'user',
+            'email' => 'user@example.com',
+            'password' => bcrypt('12345'),
+            'isAdmin' => true
+           ]
         ]);
+
+        factory('App\User', 10)->create();
     }
 }
