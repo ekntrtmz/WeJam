@@ -30,19 +30,19 @@ Auth::routes([
 
 //  City
 Route::get('/global', 'CityController@global')->name('cities.global');
-Route::get('/{City}', 'CityController@city')->name('cities.city')->where('City', '[a-z]{3}+');
+Route::get('/{city}', 'CityController@city')->name('cities.city')->where('City', '[a-z]{3}+');
 
 //  User
 Route::get('/artists', 'UserController@artists')->name('users.artists');
-Route::get('/artists/{User}', 'UserController@artist')->name('users.artist');
+Route::get('/artists/{user}', 'UserController@artist')->name('users.artist');
 //  Route::get('/me', 'UserConroller@me')->name('users.me'); //  with middleware(auth)
 
 
 //  Jam
 Route::get('/jam-sessions', 'JamController@jam_sessions')->name('jams.jam_sessions');
-Route::get('/jam-sessions/{Jam}', 'JamController@jam_session')->name('jams.jam_session');
+Route::get('/jam-sessions/{jam}', 'JamController@jam_session')->name('jams.jam_session');
 
 Route::get('/open-mics', 'JamController@open_mics')->name('jams.open_mics');
-Route::get('/open-mics/{Jam}', 'JamController@open_mic')->name('jams.open_mic');
+Route::get('/open-mics/{jam}', 'JamController@open_mic')->name('jams.open_mic');
 
 Route::get('/home', 'HomeController@index')->name('home');
