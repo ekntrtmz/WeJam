@@ -30,7 +30,7 @@ Auth::routes([
 
 //  City
 Route::get('/global', 'CityController@global')->name('cities.global');
-Route::get('/{City}', 'CityController@city')->name('cities.city')->where('City', '[a-z]+');;
+Route::get('/{City}', 'CityController@city')->name('cities.city')->where('City', '[a-z]+');
 
 //  User
 Route::get('/artists', 'UserController@artists')->name('users.artists');
