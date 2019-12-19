@@ -91,7 +91,8 @@ class CityController extends Controller
      */
     public function global()
     {
-        return City::all();
+        //  return City::all();
+        dd(City::all());
         // /return view('cities.cities')->with('cities', City::all());
     }
 
