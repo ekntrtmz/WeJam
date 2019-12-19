@@ -10,6 +10,14 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+
+    //  RouteModelBinding with different key/parameter : 'username' instead of 'id' (default)
+    public function getRouteKeyName()
+    {
+        return 'username';
+    }
+
+
     /**
      * The attributes that are mass assignable.
      *
