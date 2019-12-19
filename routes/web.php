@@ -20,7 +20,7 @@ Route::get('/', function () {
     }
 
     return view('welcome');
-});
+})->name('welcome');
 
 //  Laravel's built-in Auth package
 Auth::routes([
@@ -28,5 +28,8 @@ Auth::routes([
     'register' => false
 ]);
 
+//  City
+Route::get('global', 'CityController@global')->name('cities.global');
+Route::get('{City}', 'CityController@city')->name('cities.city');
 
 Route::get('/home', 'HomeController@index')->name('home');

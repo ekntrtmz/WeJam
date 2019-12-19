@@ -82,4 +82,26 @@ class CityController extends Controller
     {
         //
     }
+
+    /**
+     * Show all cities
+     *
+     * @param  \App\City  $city
+     * @return \Illuminate\Http\Response
+     */
+    public function global(City $city)
+    {
+        //
+    }
+
+    /**
+     * Show the specified ressource
+     *
+     * @param  \App\City  $city
+     * @return \Illuminate\Http\Response
+     */
+    public function city(City $city)
+    {
+        //
+    }
 }
