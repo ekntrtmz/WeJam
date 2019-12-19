@@ -17,6 +17,12 @@ class User extends Authenticatable
         return 'username';
     }
 
+    //
+    public function jams()
+    {
+        return $this->hasMany(Jam::class);
+    }
+
 
     /**
      * The attributes that are mass assignable.
