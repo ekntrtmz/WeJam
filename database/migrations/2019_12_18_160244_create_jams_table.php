@@ -32,10 +32,6 @@ class CreateJamsTable extends Migration
             $table->integer('city_id')->unsigned();
             //  Relationship to the City where the Jam takes places
 
-            //  !!TODO: Collaboration Model
-            //  $table->integer('collaboration_id)->unsigned();
-            //  Relationship to collaboration with other users 'Jammers'  (used in Jam Session)
-
             /**
              * Jam Session related
              *
