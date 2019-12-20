@@ -114,6 +114,7 @@ class JamController extends Controller
         if($jam->type != 'open_mic') {
             abort(404);
         }
+
         $jam->load('sinergias', 'city');
 
         return $jam;
