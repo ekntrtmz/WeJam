@@ -85,12 +85,37 @@ class JamController extends Controller
     }
 
     public function jam_sessions () {
-        return Jam::all();
+
+        $query = Jam::where('type', '=', 'jam_session')->get();
+
+        return $query;
     }
 
     public function jam_session (Jam $jam) {
 
+        if($jam->type != 'jam_session') {
+            abort(404);
+        }
         $jam->load('sinergias', 'city', 'user');
+
+        return $jam;
+
+    }
+
+    public function open_mics () {
+
+        $query = Jam::where('type', '=', 'open_mic')->get();
+
+        return $query;
+    }
+
+    public function open_mic (Jam $jam) {
+
+        if($jam->type != 'open_mic') {
+            abort(404);
+        }
+        $jam->load('sinergias', 'city');
+
         return $jam;
 
     }
