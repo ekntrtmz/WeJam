@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class JamController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -83,8 +84,15 @@ class JamController extends Controller
         //
     }
 
-    public function jam_sessions (){
+    public function jam_sessions () {
         return Jam::all();
+    }
+
+    public function jam_session (Jam $jam) {
+
+        $jam->load('sinergias', 'city', 'user');
+        return $jam;
+
     }
 
 }

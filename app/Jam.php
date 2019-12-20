@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jam extends Model
 {
-    //
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     public function city()
     {
@@ -16,7 +20,7 @@ class Jam extends Model
 
     //
 
-    public function owner()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
