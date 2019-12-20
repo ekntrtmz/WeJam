@@ -10,7 +10,7 @@ class UserController extends Controller
     //
     public function artists()
     {
-        dd(User::all());
+        return User::with('jams')->get();
     }
 
     //
