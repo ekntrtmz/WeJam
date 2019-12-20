@@ -61,7 +61,7 @@
                     <a class="navbar-link">
                         <span class="icon" style="margin-right:7px;margin-left:7px;">
                             @if(Auth::user()->isAdmin)
-                            <i class="fas fa-user-shield fa-border" ></i>
+                            <i class="fas fa-user-shield" ></i>
                             @else
                             <i class="fas fa-user-circle" ></i>
                             @endif
@@ -70,18 +70,22 @@
                     </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
-                        <span class="icon is-medium"><i class="fas fa-user-circle"></i></span>
+                        <span class="icon is-medium">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
                         <span>Profile</span>
                         </a>
                         <a class="navbar-item">
-                        <span class="icon is-small"><i class="fas fa-cog"></i></span>
+                        <span class="icon is-medium">
+                            <i class="fas fa-cog"></i>
+                        </span>
                         <span>Settings</span>
                         </a>
                         <hr class="navbar-divider">
                         <a
                             class="navbar-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <span class="icon is-small"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="icon is-medium"><i class="fas fa-sign-out-alt"></i></span>
                         <span>{{ __('Logout') }}</span>
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
