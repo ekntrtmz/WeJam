@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="section">
-    <div class="container">
-
         <div class="brand-wrapper">
                 <a href="/" class="brand-text">wejam</a>
         </div>
@@ -66,6 +63,4 @@
                 </form>
             </div>
         </div>
-    </div>
-</div>
 @endsection

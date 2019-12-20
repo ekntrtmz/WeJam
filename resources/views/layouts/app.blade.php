@@ -25,7 +25,11 @@
        @include('layouts.navbar')
     @endunless
         <main class="content">
-            @yield('content')
+            <div class="section">
+                <div class="container">
+                    @yield('content')
+                </div>
+            </div>
         </main>
     </div>
 </body>

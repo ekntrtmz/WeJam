@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="section">
-    <div class="container">
         <h1 class="title has-text-centered">{{ __('Register') }}</h1>
         <div class="columns is-centered">
             <div class="box column is-one-third">
@@ -74,6 +72,4 @@
                 </form>
             </div>
         </div>
-    </div>
-</div>
 @endsection
