@@ -26,7 +26,7 @@
     @endunless
         <main class="content">
             <div class="section">
-                <div class="container">
+                <div id="main" class="container">
                     @yield('content')
                 </div>
             </div>

@@ -18347,25 +18347,6 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-.brand-text {
-  font-family: "Dr Sugiyama", cursive;
-  font-size: 32px;
-}
-
-.brand-wrapper {
-  text-align: center;
-  padding: 45px;
-}
-
-.brand-text {
-  font-size: 38px;
-  color: #c0392b;
-}
-
-.brand-text:hover {
-  color: #ecf0f1;
-}
-
 /* Customize Checkboxes globally */
 
 .checkbox {
@@ -18418,5 +18399,28 @@ readers do not read off random characters that represent icons */
 
 .checkbox > input:active {
   border: 2px solid #34495E;
+}
+
+.container#main {
+  background-color: #fcf7f8;
+}
+
+.brand-text {
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 32px;
+}
+
+.brand-wrapper {
+  text-align: center;
+  padding: 45px;
+}
+
+.brand-text {
+  font-size: 38px;
+  color: #c0392b;
+}
+
+.brand-text:hover {
+  color: #ecf0f1;
 }
 
