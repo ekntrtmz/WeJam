@@ -37,6 +37,13 @@
                                     </button>
                                 </div>
                             </div>
+                            <div class="field">
+                                <div class="control has-text-centered">
+                                    <a href="{{ route('login') }}" class="is-link">
+                                        {{ __('Back to Login') }}
+                                    </a>
+                                </div>
+                            </div>
                     </form>
                 </div>
             </div>

@@ -67,6 +67,13 @@
                 </div>
             </div>
             @endif
+            <div class="field">
+                <div class="control has-text-centered">
+                    <a href="{{ route('welcome') }}" class="button is-small is-link">
+                        {{ __('Home') }}
+                    </a>
+                </div>
+            </div>
         </form>
     </div>
 </div>
