@@ -4,6 +4,7 @@
 
 use App\Jam;
 use Faker\Generator as Faker;
+use Illuminate\Support\Str;
 
 $factory
     ->state(App\Jam::class, 'jam-session', function(Faker $faker) {
@@ -27,9 +28,14 @@ $factory->state(App\Jam::class, 'open-mic', function() {
 });
 
 $factory->define(Jam::class, function (Faker $faker) {
+
+    $title = $faker->unique()->sentence(3);
+    $slug =  Str::slug( $title, '-');;
+
     return [
         //
-        'title' => $faker->unique()->sentence(3),
+        'title' => $title,
+        'slug' => $slug,
         'descr' => $faker->text(),
         'city_id' => $faker->numberBetween(0,7),
         //'user_id' => factory('App\User')->create()->id,

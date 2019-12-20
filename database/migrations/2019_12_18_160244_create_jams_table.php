@@ -18,6 +18,7 @@ class CreateJamsTable extends Migration
             $table->enum('type', ['jam_session', 'open_mic'])->default('jam_session');
             //  Type of the Jam that can either be a Session or an Open Mic
             $table->string('title')->unique();
+            $table->string('slug')->unique();
             //  Title of the Jam  (used in both types)
             $table->string('descr');
             //  Description of the Jam (used in both types)
