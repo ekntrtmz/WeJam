@@ -11,7 +11,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        //  Staff Users
+        //  All other User Seeding is done wthin JamsFactory
         DB::table('users')->insert([
            [
             'username' => 'admin',
@@ -26,7 +27,5 @@ class UsersTableSeeder extends Seeder
             'isAdmin' => false
            ]
         ]);
-
-        factory('App\User', 10)->create();
     }
 }

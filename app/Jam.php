@@ -27,4 +27,6 @@ class Jam extends Model
     {
         return $this->hasMany(Sinergia::class);
     }
+
+    protected $guarded = [];
 }

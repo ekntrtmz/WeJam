@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class SinergiasSeeder extends Seeder
+class JamsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,5 +12,7 @@ class SinergiasSeeder extends Seeder
     public function run()
     {
         //
+        factory('App\Jam', 35)->create();
+        factory('App\Jam', 70)->states('open-mic')->create();
     }
 }

@@ -15,13 +15,13 @@ class CreateJamsTable extends Migration
     {
         Schema::create('jams', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->enum('type', ['jam_session', 'open_mic']);
+            $table->enum('type', ['jam_session', 'open_mic'])->default('jam_session');
             //  Type of the Jam that can either be a Session or an Open Mic
             $table->string('title')->unique();
             //  Title of the Jam  (used in both types)
             $table->string('descr');
             //  Description of the Jam (used in both types)
-            $table->enum('mode', ['public', 'private'])->default('public');
+            $table->enum('mode', ['public', 'private'])->nullable();
             //  Mode of the Jam that can be public or private (used in Jam Session)
             $table->string('banner_path')->nullable();
             //  Path to the Jam banner image (used in both types)
@@ -54,7 +54,7 @@ class CreateJamsTable extends Migration
             //  Event place of the Open Mic, e.g. Bar, Restaurant, Club, Hostel etc.
             $table->enum('open_mic_event_place_type', ['bar', 'restaurant', 'club', 'hostel','hotel', 'other'])->nullable();
             //  Type of the event place
-            $table->string('open_mic_event_website');
+            $table->string('open_mic_event_website')->nullable();
             //  Official Website of the event host/event place
             $table->string('open_mic_event_url')->nullable();
             //  URL to Event in the web

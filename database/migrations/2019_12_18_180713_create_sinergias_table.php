@@ -19,7 +19,7 @@ class CreateSinergiasTable extends Migration
             //  Relationship to Jam
             $table->integer('user_id');
             //  Relationship to User
-            $table->enum('role', ['promoter', 'co_host'])->default('promoter');
+            $table->enum('jam_role', ['promoter', 'co_host'])->nullable();
             //  Role of the user within this synergy
             $table->boolean('has_liked')->default(false);
             //  True if user has 'liked' the jam, probably going to be a 'check-fist with ya man'
