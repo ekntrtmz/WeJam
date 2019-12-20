@@ -106,6 +106,6 @@ class CityController extends Controller
         //return $city;
         $city->load('jams');
         //  Load relationship data to jams
-        dd($city);
+        return $city;
     }
 }

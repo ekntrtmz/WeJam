@@ -17,7 +17,7 @@ class UserController extends Controller
     public function artist(User $user)
     {
         $user->load('jams');
-        dd($user);
+        return $user;
     }
 
 }
