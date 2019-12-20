@@ -11,8 +11,7 @@ class JamsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        factory('App\Jam', 35)->create();
-        factory('App\Jam', 70)->states('open-mic')->create();
+        factory('App\Jam', 100)->states('open-mic')->create();
+        //  100 x Open Mics
     }
 }

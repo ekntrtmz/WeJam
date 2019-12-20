@@ -11,9 +11,7 @@ class SinergiasTableSeeder extends Seeder
      */
     public function run()
     {
-        //  Run factory function in 3 states (jam_role = (null, promoter, co_host)
-        factory('App\Sinergia', 20)->create();
-        factory('App\Sinergia', 15)->states('promotion')->create();
-        factory('App\Sinergia', 5)->states('co-hosting')->create();
+        factory('App\Sinergia', 300)->states('randomized')->create();
+        //  300 x Sinergias (likes, joins, performances)
     }
 }
