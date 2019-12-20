@@ -1,4 +1,4 @@
-<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+<nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
   <div class="container">
         <div class="navbar-brand">
                 <a class="navbar-item brand-text" href="/">wejam</a>
@@ -15,7 +15,7 @@
                     Home
                 </a>
 
-                <a href="/cities" class="navbar-item {{ request()->routeIs('jams') ? 'is-active' : ''}}">
+                <a href="/global" class="navbar-item {{ request()->routeIs('jams') ? 'is-active' : ''}}">
                     Cities
                 </a>
 
@@ -43,36 +43,6 @@
                 </div>
 
                 <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="dropdown is-hoverable">
-                        <div class="dropdown-trigger">
-                            <div class="field has-addons">
-                                <p class="control">
-                                    <button class="button is-static">
-                                    <span class="icon is-small">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </span>
-                                    </button>
-                                </p>
-                                <p class="control is-expanded">
-                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu-city">
-                                        <span>Barcelona</span>
-                                        <span class="icon is-small">
-                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu" id="dropdown-menu-city" role="menu">
-                            <div class="dropdown-content">
-                            <div class="dropdown-item">
-                                <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 @guest
                 <div class="navbar-item">
                     <div class="buttons">
@@ -100,7 +70,7 @@
                     </a>
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
-                        <span class="icon is-small"><i class="fas fa-user-circle"></i></span>
+                        <span class="icon is-medium"><i class="fas fa-user-circle"></i></span>
                         <span>Profile</span>
                         </a>
                         <a class="navbar-item">
