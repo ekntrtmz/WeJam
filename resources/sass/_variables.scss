@@ -1,19 +1,22 @@
-// Body
-$body-bg: #f8fafc;
+// Navbar
+$navbar-height: 1.5rem;
+$navbar-padding-vertical: 0.5rem;
+$navbar-padding-horizontal: 1.5rem;
+
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
-// Container Widths
 
-$widescreen: 1012;
-$fullhd: 1012;
+// Disable the fullhd breakpoint
+$fullhd-enabled: false;
 
-// Bulma
-
+// Colors
 $primary: #c0392b;
 $link: #ced3dc;
 $info: #031927;
 $danger: $primary;
+
+
