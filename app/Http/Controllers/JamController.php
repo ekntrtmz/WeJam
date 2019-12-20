@@ -82,4 +82,9 @@ class JamController extends Controller
     {
         //
     }
+
+    public function jam_sessions (){
+        return Jam::all();
+    }
+
 }
