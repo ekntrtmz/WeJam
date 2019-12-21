@@ -3,7 +3,7 @@
 @section('content')
         <h1 class="title has-text-centered">{{ __('Register') }}</h1>
         <div class="columns is-centered">
-            <div class="box column is-one-third">
+            <div class="box column is-3">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
                     <div class="field">

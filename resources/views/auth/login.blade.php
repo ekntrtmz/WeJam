@@ -7,7 +7,7 @@
 </div>
 
 <div class="columns is-centered">
-    <div class="box column is-5">
+    <div class="box column is-3">
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -22,7 +22,7 @@
             <div class="field">
             <label class="label">{{ __('Your Email/Username') }}</label>
             <div class="control has-icons-left">
-                <input autofocus name="login" class="input is-large {{  $errors->has('username') ? 'is-danger' : '' }}" type="text" value="{{ old('login') }}">
+                <input name="login" class="input is-large {{  $errors->has('username') ? 'is-danger' : '' }}" type="text" value="{{ old('login') }}" autofocus>
                 <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                 </span>

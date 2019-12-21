@@ -24,13 +24,7 @@
     @unless($hide_navbar ?? '')
        @include('layouts.navbar')
     @endunless
-        <main class="content">
-            <div class="section">
-                <div id="main" class="container">
-                    @yield('content')
-                </div>
-            </div>
-        </main>
+        @yield('content')
     </div>
 </body>
 </html>

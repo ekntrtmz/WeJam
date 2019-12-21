@@ -1,7 +1,12 @@
 <nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
   <div class="container">
         <div class="navbar-brand">
-                <a class="navbar-item brand-text" href="/">wejam</a>
+{{--                 <a class="navbar-item" href="https://bulma.io">
+                    <img src="{{ url('/img/wejam_logo.png') }}" width="100" height="40">
+                </a> --}}
+                <a id="brand-logo-text" class="navbar-item" href="/">
+                    <span>wejam</span>
+                </a>
 
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>

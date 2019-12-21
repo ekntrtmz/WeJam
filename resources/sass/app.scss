@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat&display=swap');
 
 // Variables
 @import 'variables';
@@ -18,14 +18,42 @@
 // Customize Checkboxes globally
 @import 'checkboxes';
 
+// Placeholders
+.placeholder-home {
+  height: 150px;
+}
+
 html, body {
   background: #fcf7f8;
 }
 
+main {
+  background: #ffffff;
+}
+
+.notification-bar {
+  .notification {
+    margin-top:25px;
+    margin-bottom: 25px;
+  }
+
+}
+
+// Navbar
+.navbar-item {
+  margin-right: 3px;
+}
+
 // Branding
-.brand-text {
+#brand-logo-text {
   font-family: 'Dr Sugiyama', cursive;
   font-size:32px;
+  height: 40px;
+  background:none;
+
+  span {
+    margin-top:-10px;
+  }
 }
 
 .brand-wrapper {
@@ -34,8 +62,10 @@ html, body {
   }
 
   .brand-text {
+    font-family: 'Dr Sugiyama', cursive;
     font-size: 38px;
     color: $primary;
+
 
     &:hover {
       color: #ecf0f1;
@@ -43,6 +73,3 @@ html, body {
   }
 }
 
-.navbar-item.brand-text {
-  display: none!important;
-}

@@ -3,9 +3,8 @@ $navbar-height: 1.5rem;
 $navbar-padding-vertical: 0.5rem;
 $navbar-padding-horizontal: 1.5rem;
 
-
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$family-sans-serif: "Montserrat", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -18,5 +17,13 @@ $primary: #c0392b;
 $link: #ced3dc;
 $info: #031927;
 $danger: $primary;
+
+//  Section
+$section-padding: 1.25rem 1.25rem;
+
+$title-size: 1.4rem;
+$title-weight: 300;
+$subtitle-size: 0.8rem;
+$subtitle-weight: 100;
 
 

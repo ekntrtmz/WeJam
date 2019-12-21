@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dr+Sugiyama&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Dr+Sugiyama|Montserrat&display=swap);@charset "UTF-8";
 
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
@@ -452,7 +452,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Montserrat", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -1178,15 +1178,15 @@ a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Montserrat", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Montserrat", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Montserrat", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -4415,8 +4415,8 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1.125;
 }
 
@@ -4463,8 +4463,8 @@ a.tag:hover {
 
 .subtitle {
   color: #4a4a4a;
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 100;
   line-height: 1.25;
 }
 
@@ -11898,7 +11898,7 @@ label.panel-block:hover {
 }
 
 .section {
-  padding: 3rem 1.5rem;
+  padding: 1.25rem 1.25rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -17882,14 +17882,37 @@ readers do not read off random characters that represent icons */
   border: 2px solid #34495E;
 }
 
+.placeholder-home {
+  height: 150px;
+}
+
 html,
 body {
   background: #fcf7f8;
 }
 
-.brand-text {
+main {
+  background: #ffffff;
+}
+
+.notification-bar .notification {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.navbar-item {
+  margin-right: 3px;
+}
+
+#brand-logo-text {
   font-family: "Dr Sugiyama", cursive;
   font-size: 32px;
+  height: 40px;
+  background: none;
+}
+
+#brand-logo-text span {
+  margin-top: -10px;
 }
 
 .brand-wrapper {
@@ -17898,15 +17921,12 @@ body {
 }
 
 .brand-text {
+  font-family: "Dr Sugiyama", cursive;
   font-size: 38px;
   color: #c0392b;
 }
 
 .brand-text:hover {
   color: #ecf0f1;
-}
-
-.navbar-item.brand-text {
-  display: none !important;
 }
 
