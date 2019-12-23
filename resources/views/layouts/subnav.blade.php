@@ -13,7 +13,11 @@
           <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
               <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                <span>Select your city</span>
+              @if (Auth::user()->current_city)
+              <span>{{ __(Auth::user()->current_city) }}</span>
+              @else
+              <span>{{ __('Select your city') }}</span>
+              @endif
                 <span class="icon is-small">
                   <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </span>
