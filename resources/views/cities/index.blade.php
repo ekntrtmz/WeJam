@@ -7,7 +7,7 @@
       @if ($cities)
 
       <div class="column is-12">
-        <h1 class="title">{{ $cities->count() }} {{__('Cities') }} {{ __('are jammin` with us') }}</h1>
+        <h1 class="title">{{ $cities->count() }} {{__('Cities') }} {{ __('are allready jammin with us') }}</h1>
           <p class="subtitle">{{ __('Where are you going to jam next?') }}</p>
       </div>
       <div class="column is-12">

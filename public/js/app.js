@@ -1898,18 +1898,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      slides: [{
-        city: 'Barcelona',
-        slug: 'bcn'
+      cities: [{
+        name: 'Barcelona',
+        "short": 'bcn',
+        slug: 'barcelona'
       }, {
-        city: 'Paris',
-        slug: 'par'
+        name: 'Paris',
+        "short": 'par',
+        slug: 'paris'
       }, {
-        city: 'London',
-        slug: 'ldn'
+        name: 'London',
+        "short": 'ldn',
+        slug: 'london'
       }, {
-        city: 'Rome',
-        slug: 'rme'
+        name: 'Rome',
+        "short": 'rme',
+        slug: 'rome'
       }],
       slideIndex: 0,
       classIsActive: false
@@ -20268,7 +20272,7 @@ var render = function() {
       staticClass: "flex-center position-ref full-height",
       style: {
         backgroundImage:
-          "url(/img/wejammin-" + _vm.slides[_vm.slideIndex].slug + ".jpg)"
+          "url(/img/wejammin-" + _vm.cities[_vm.slideIndex].short + ".jpg)"
       }
     },
     [
@@ -20293,7 +20297,7 @@ var render = function() {
           [
             _vm._v(
               "\n                " +
-                _vm._s(_vm.slides[_vm.slideIndex].city) +
+                _vm._s(_vm.cities[_vm.slideIndex].name) +
                 "\n            "
             )
           ]
@@ -20310,12 +20314,14 @@ var render = function() {
           "a",
           {
             staticClass: "button is-primary is-large-desktop",
-            attrs: { href: "/bcn" }
+            attrs: { href: "/cities/" + _vm.cities[_vm.slideIndex].slug }
           },
           [
             _vm._v(
               "\n                JAM in " +
-                _vm._s(_vm._f("toUpperCase")(_vm.slides[_vm.slideIndex].slug)) +
+                _vm._s(
+                  _vm._f("toUpperCase")(_vm.cities[_vm.slideIndex].short)
+                ) +
                 "\n            "
             )
           ]

@@ -1,6 +1,6 @@
 <template>
     <div
-        :style="{backgroundImage:`url(/img/wejammin-${slides[slideIndex].slug}.jpg)`}"
+        :style="{backgroundImage:`url(/img/wejammin-${cities[slideIndex].short}.jpg)`}"
         class="flex-center position-ref full-height">
             <slot name="welcome-navigation"></slot>
             <div class="content">
@@ -11,13 +11,13 @@
                     class="city typewriter"
                     v-on:animationend="resetAnim()"
                     :class="{'typing':classIsActive}" >
-                    {{ slides[slideIndex].city }}
+                    {{ cities[slideIndex].name }}
                 </div>
                 <div class="slogan m-b-md">
                     <slot name="welcome-slogan"></slot>
                 </div>
-                <a href="/bcn" class="button is-primary is-large-desktop">
-                    JAM in {{slides[slideIndex].slug | toUpperCase }}
+                <a :href="'/cities/'+cities[slideIndex].slug" class="button is-primary is-large-desktop">
+                    JAM in {{cities[slideIndex].short | toUpperCase }}
                 </a>
             </div>
         </div>
@@ -26,22 +26,26 @@
 export default {
     data() {
         return {
-            slides: [
+            cities: [
                 {
-                    city: 'Barcelona',
-                    slug: 'bcn'
+                    name: 'Barcelona',
+                    short: 'bcn',
+                    slug: 'barcelona'
                 },
                 {
-                    city: 'Paris',
-                    slug: 'par'
+                    name: 'Paris',
+                    short: 'par',
+                    slug: 'paris'
                 },
                 {
-                    city: 'London',
-                    slug: 'ldn'
+                    name: 'London',
+                    short: 'ldn',
+                    slug: 'london'
                 },
                 {
-                    city: 'Rome',
-                    slug: 'rme'
+                    name: 'Rome',
+                    short: 'rme',
+                    slug: 'rome'
                 }
             ],
             slideIndex: 0,
