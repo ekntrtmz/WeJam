@@ -16,10 +16,6 @@
             </div>
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                <a href="/home" class="navbar-item {{ request()->routeIs('home') ? 'is-active' : ''}}">
-                    Home
-                </a>
-
                 <a href="/cities" class="navbar-item {{ request()->routeIs('cities.*') ? 'is-active' : ''}}">
                     Cities
                 </a>
