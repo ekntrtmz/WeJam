@@ -73,12 +73,12 @@
                         </span>
                         {{ Auth::user()->username }}
                     </a>
-                    <div class="navbar-dropdown">
+                    <div class="navbar-dropdown ">
                         <a class="navbar-item">
                         <span class="icon is-medium">
-                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-guitar"></i>
                         </span>
-                        <span>Profile</span>
+                        <span>Your Jams</span>
                         </a>
                         <a class="navbar-item">
                         <span class="icon is-medium">
