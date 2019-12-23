@@ -93,9 +93,8 @@ class CityController extends Controller
     {
 
         $cities = City::withCount('jams')->get();
-        //return $global;
         return view('cities.index')->with(compact('cities'));
-        // /return view('cities.cities')->with('cities', City::all());
+
     }
 
     /**
@@ -106,9 +105,9 @@ class CityController extends Controller
      */
     public function city(City $city)
     {
-        //return $city;
+
         $city->load('jams');
-        //  Load relationship data to jams
-        return $city;
+
+        return view('cities.city')->with(compact('city'));
     }
 }
