@@ -40,6 +40,9 @@
         <div class="column is-12">
           <div class="placeholder">
             Placeholder
+
+            <example-component></example-component>
+
           </div>
         </div>
       </div>
