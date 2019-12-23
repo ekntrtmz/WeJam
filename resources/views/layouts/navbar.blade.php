@@ -50,16 +50,14 @@
                 <div class="navbar-end">
                 @guest
                 <div class="navbar-item">
-                    <div class="buttons">
                     @if (Route::has('register'))
-                    <a class="button is-primary" href="{{ route('register') }}">
+                    <a class="button is-primary is-spaced" href="{{ route('register') }}">
                         <strong>{{ __('Register') }}</strong>
                     </a>
                     @endif
-                    <a class="button is-primary is-outlined is-inverted" href="{{ route('login') }}">
+                    <a class="button is-narrow is-primary is-outlined is-inverted is-spaced" href="{{ route('login') }}">
                         {{ __('Login') }}
                     </a>
-                    </div>
                 </div>
                 @else
                 <div class="navbar-item has-dropdown is-hoverable">

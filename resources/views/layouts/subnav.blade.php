@@ -5,7 +5,7 @@
     <div class="level-item">
       <div class="field has-addons">
         <p class="control">
-          <button id="addon-city-select" disabled="disabled" class="button">
+          <button id="addon-city-select" class="button is-static">
             <span>in</span>
           </button>
         </p>
