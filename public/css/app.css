@@ -11912,8 +11912,8 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem;
+  background-color: #fcf7f8;
+  padding: 1.5rem 1.5rem 0.75rem;
 }
 
 /*!
@@ -17949,5 +17949,18 @@ main {
 
 .brand-text:hover {
   color: #ecf0f1;
+}
+
+.footer {
+  background: #031927;
+}
+
+.footer .branding {
+  font-family: "Dr Sugiyama", cursive;
+  font-size: 38px;
+}
+
+.footer .slogan {
+  font-size: 12px;
 }
 

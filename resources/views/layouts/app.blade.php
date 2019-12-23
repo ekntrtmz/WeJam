@@ -25,6 +25,7 @@
        @include('layouts.navbar')
     @endunless
         @yield('content')
+        @include('layouts.footer')
     </div>
 </body>
 </html>
