@@ -1,4 +1,4 @@
-@extends('layouts.app', ['hide_navbar' => true] )
+@extends('layouts.app', ['hide_navbar' => true, 'hide_footer' => true] )
 
 @section('content')
 

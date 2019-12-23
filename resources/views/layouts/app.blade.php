@@ -24,8 +24,13 @@
     @unless($hide_navbar ?? '')
        @include('layouts.navbar')
     @endunless
-        @yield('content')
+
+    @yield('content')
+
+    @unless($hide_footer ?? '')
         @include('layouts.footer')
+    @endunless
+
     </div>
 </body>
 </html>

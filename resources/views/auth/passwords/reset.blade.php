@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['hide_navbar' => true, 'hide_footer' => true] )
 
 @section('content')
         <div class="brand-wrapper">

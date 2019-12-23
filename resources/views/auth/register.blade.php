@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['hide_navbar' => true, 'hide_footer' => true] )
 
 @section('content')
         <h1 class="title has-text-centered">{{ __('Register') }}</h1>
