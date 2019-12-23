@@ -45,4 +45,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //  City
 Route::get('/cities', 'CityController@cities')->name('cities.cities');
-Route::get('/{city}', 'CityController@city')->name('cities.city')->where('City', '[a-z]{3}+');
+Route::get('/cities/{city}', 'CityController@city')->name('cities.city');

@@ -17,6 +17,7 @@ class CreateCitiesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             //  Name of the city
+            $table->string('slug');
             $table->string('short');
             //  Shortname (airport abbreviation, e.g. BCN)
             $table->string('banner_path')->nullable();

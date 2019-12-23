@@ -17,6 +17,6 @@ class City extends Model
     //  RouteModelBinding with different key/parameter : 'short' instead 'id' (default)
     public function getRouteKeyName()
     {
-        return 'short';
+        return 'slug';
     }
 }

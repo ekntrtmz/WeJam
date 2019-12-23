@@ -20,7 +20,7 @@
                     Home
                 </a>
 
-                <a href="/cities" class="navbar-item {{ request()->routeIs('cities.cities') ? 'is-active' : ''}}">
+                <a href="/cities" class="navbar-item {{ request()->routeIs('cities.*') ? 'is-active' : ''}}">
                     Cities
                 </a>
 

@@ -36,7 +36,7 @@
         <div class="column is-4">
             <div class="card city-card">
                 <div class="card-image">
-                  <figure class="image is-4by3">
+                  <figure class="image is-5by3">
                     <img src="{{ url('/img/wejammin-'.$city->short.'.jpg') }}" alt="Placeholder image">
                   </figure>
                 </div>
@@ -53,8 +53,8 @@
                   </div>
                   <div class="content has-text-centered">
                     <hr>
-                  <a href="/{{ $city->short }}" class="button is-primary is-rounded is-outlined">
-                      {{ __('View') }}
+                  <a href="/cities/{{ $city->slug }}" class="button is-primary is-rounded is-outlined">
+                      {{ __('View Jams') }}
                     </a>
                   </div>
                 </div>

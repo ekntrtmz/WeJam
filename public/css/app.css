@@ -18004,3 +18004,8 @@ main {
   opacity: 0.25;
 }
 
+.placeholder {
+  height: 350px;
+  color: whitesmoke;
+}
+

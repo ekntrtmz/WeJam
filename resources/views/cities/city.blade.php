@@ -20,7 +20,7 @@
             <p class="subtitle">{{ __('Choose between Sessions and Open Mics') }}</p>
         </div>
         <div class="column is-12">
-            <div class="tabs is-medium is-boxed">
+            <div class="tabs is-medium is-centered is-boxed">
                 <ul>
                   <li class="is-active">
                     <a>
@@ -36,6 +36,11 @@
                   </li>
                 </ul>
               </div>
+        </div>
+        <div class="column is-12">
+          <div class="placeholder">
+            Placeholder
+          </div>
         </div>
       </div>
     </div>
