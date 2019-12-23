@@ -44,5 +44,5 @@ Route::get('/open-mics/{jam}', 'JamController@open_mic')->name('jams.open_mic');
 Route::get('/home', 'HomeController@index')->name('home');
 
 //  City
-Route::get('/global', 'CityController@global')->name('cities.global');
+Route::get('/cities', 'CityController@cities')->name('cities.cities');
 Route::get('/{city}', 'CityController@city')->name('cities.city')->where('City', '[a-z]{3}+');

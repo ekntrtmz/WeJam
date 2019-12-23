@@ -89,7 +89,7 @@ class CityController extends Controller
      * @param  \App\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function global()
+    public function cities()
     {
 
         $cities = City::withCount('jams')->get();
