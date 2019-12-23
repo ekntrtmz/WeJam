@@ -44,6 +44,29 @@ main {
   margin-right: 3px;
 }
 
+//  Subnav
+.subnavigation {
+  background:#031927;
+
+  select {
+    border-radius: 0px;
+  }
+}
+
+#addon-city-select {
+  background-color:#ced3dc;
+  border-color: #ffffff;
+  cursor: none;
+
+  span {
+    color: #031927;
+    font-size:25px;
+    font-family: 'Dr Sugiyama', cursive;
+    margin-top: -5px;
+  }
+
+}
+
 // Branding
 #brand-logo-text {
   font-family: 'Dr Sugiyama', cursive;

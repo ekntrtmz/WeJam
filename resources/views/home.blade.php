@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="subnavigation section">
+    @include('layouts.subnav')
+</div>
 @if (session('status'))
 <div class="notification-bar">
     <div class="container">
