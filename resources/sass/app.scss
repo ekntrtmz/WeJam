@@ -56,6 +56,10 @@ main {
 .subnavigation {
   background:#031927;
 
+  &.section {
+    padding: 0.75rem 0.75rem;
+  }
+
   select {
     border-radius: 0px;
   }
@@ -81,6 +85,11 @@ main {
   font-size:32px;
   height: 40px;
   background:none;
+
+  span {
+    height: 52px;
+  }
+
 }
 
 .brand-wrapper {

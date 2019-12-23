@@ -17914,6 +17914,10 @@ main {
   background: #031927;
 }
 
+.subnavigation.section {
+  padding: 0.75rem 0.75rem;
+}
+
 .subnavigation select {
   border-radius: 0px;
 }
@@ -17936,6 +17940,10 @@ main {
   font-size: 32px;
   height: 40px;
   background: none;
+}
+
+#brand-logo-text span {
+  height: 52px;
 }
 
 .brand-wrapper {

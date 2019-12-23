@@ -5,14 +5,14 @@
     <div class="level-item">
       <div class="field has-addons">
         <p class="control">
-          <button id="addon-city-select" class="button is-static">
+          <button id="addon-city-select" class="button is-static is-small">
             <span>in</span>
           </button>
         </p>
         <p class="control">
           <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
-              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+              <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu4">
               @if (Auth::user()->current_city)
               <span>{{ __(Auth::user()->current_city) }}</span>
               @else
@@ -61,9 +61,9 @@
   <!-- Right side -->
   <div class="level-right">
     <p class="level-item">
-      <a class="button is-primary is-inverted is-outlined">
+      <a class="button is-primary is-inverted is-outlined is-small">
           <span class="icon">
-            <i class="fas fa-guitar"></i>
+            <i class="fas fa-plus-circle"></i>
           </span>
           <span>Create Jam</span>
       </a>
