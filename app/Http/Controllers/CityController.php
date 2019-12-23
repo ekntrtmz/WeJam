@@ -91,7 +91,10 @@ class CityController extends Controller
      */
     public function global()
     {
-        return City::all();
+
+        $cities = City::withCount('jams')->get();
+        //return $global;
+        return view('cities.index')->with(compact('cities'));
         // /return view('cities.cities')->with('cities', City::all());
     }
 

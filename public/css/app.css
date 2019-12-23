@@ -17964,3 +17964,8 @@ main {
   font-size: 12px;
 }
 
+.city-short {
+  text-transform: uppercase;
+  color: #ced3dc;
+}
+
