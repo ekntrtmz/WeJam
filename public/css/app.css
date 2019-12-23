@@ -8723,7 +8723,7 @@ label.panel-block:hover {
 
 .tabs li.is-active a {
   border-bottom-color: #ced3dc;
-  color: #ced3dc;
+  color: #c0392b;
 }
 
 .tabs ul {
@@ -17904,6 +17904,12 @@ main {
   margin-right: 3px;
 }
 
+.button.is-spaced {
+  font-size: 0.875rem;
+  height: auto;
+  padding: calc(.5em - 1px) 1em;
+}
+
 .subnavigation {
   background: #031927;
 }
@@ -17913,13 +17919,13 @@ main {
 }
 
 #addon-city-select {
-  background-color: #ced3dc;
+  background-color: #c0392b;
   border-color: #ffffff;
-  cursor: none;
+  z-index: 2;
 }
 
 #addon-city-select span {
-  color: #031927;
+  color: #ffffff;
   font-size: 25px;
   font-family: "Dr Sugiyama", cursive;
   margin-top: -5px;
@@ -17930,10 +17936,6 @@ main {
   font-size: 32px;
   height: 40px;
   background: none;
-}
-
-#brand-logo-text span {
-  margin-top: -10px;
 }
 
 .brand-wrapper {
