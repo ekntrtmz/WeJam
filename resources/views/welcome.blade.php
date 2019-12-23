@@ -48,7 +48,7 @@
                     @endif
                     </template>
                     <template v-slot:welcome-slogan>
-                        {{ __('Connect with real people in real moments.') }}
+                        {{ __('Connect with real people and real moments.') }}
                     </template>
                 </welcome-hero>
         </div>
