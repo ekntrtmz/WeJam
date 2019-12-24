@@ -9,7 +9,9 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import Buefy from 'buefy';
-Vue.use(Buefy);
+Vue.use(Buefy, {
+    defaultIconPack: 'fas'
+});
 
 /**
  * The following block of code may be used to automatically register your
