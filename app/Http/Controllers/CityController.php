@@ -106,7 +106,7 @@ class CityController extends Controller
     public function city(City $city)
     {
 
-        $city->load('jams');
+        $city->load('jams.user');
 
         return view('cities.city')->with(compact('city'));
     }
