@@ -22,6 +22,5 @@ $factory->define(Jammer::class, function (Faker $faker) {
         //
         'jam_id' =>  $faker->numberBetween(1,50),
         'user_id' =>  $faker->numberBetween(3,253),
-
     ];
 });
