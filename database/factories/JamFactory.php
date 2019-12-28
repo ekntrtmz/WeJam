@@ -29,7 +29,7 @@ $factory->state(App\Jam::class, 'open-mic', function() {
 
 $factory->define(Jam::class, function (Faker $faker) {
 
-    $title = $faker->unique()->sentence(3);
+    $title = $faker->unique()->words(3, true);
     $slug =  Str::slug( $title, '-');;
 
     return [
