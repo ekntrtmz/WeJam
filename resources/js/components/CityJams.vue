@@ -25,7 +25,7 @@
                            <nav class="level">
                             <div class="level-item has-text-centered">
                               <div>
-                                <p class="heading">Yamans</p>
+                                <p class="heading">Yamen</p>
                                 <p class="title">3,456</p>
                               </div>
                             </div>
@@ -85,7 +85,7 @@
                           <p class="control">
                             <a href="#yaman" class="button yaman-button">
                               <span class="yaman-icon"></span>
-                              <span>Yaman!</span>
+                              <span>Ya Man</span>
                             </a>
                           </p>
                           <p class="control">

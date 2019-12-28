@@ -33949,7 +33949,7 @@ var render = function() {
                                   [
                                     _c("div", [
                                       _c("p", { staticClass: "heading" }, [
-                                        _vm._v("Yamans")
+                                        _vm._v("Yamen")
                                       ]),
                                       _vm._v(" "),
                                       _c("p", { staticClass: "title" }, [
@@ -34142,7 +34142,7 @@ var render = function() {
                                           staticClass: "yaman-icon"
                                         }),
                                         _vm._v(" "),
-                                        _c("span", [_vm._v("Yaman!")])
+                                        _c("span", [_vm._v("Ya Man")])
                                       ]
                                     )
                                   ]),
