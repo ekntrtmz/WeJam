@@ -17,6 +17,14 @@ use Illuminate\Support\Str;
 */
 
 $factory
+    ->state(User::class, 'is-host', [])
+    ->afterCreatingState(User::class, 'is-host', function($user, $faker) {
+        factory(App\Jam::class)->states('jam-session')->create([
+            'user_id' => $user->id
+        ]);
+    });
+
+$factory
     ->state(User::class, 'has-jam', [])
     ->afterCreatingState(User::class, 'has-jam', function ($user, $faker) {
         factory(App\Jam::class)->states('jam-session')->create([
