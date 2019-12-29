@@ -26,29 +26,20 @@ $factory
 
 
 $factory
-    ->state(User::class, 'has-jam', [])
-    ->afterCreatingState(User::class, 'has-jam', function ($user, $faker) {
-        factory(App\Jam::class)->states('jam-session')->create([
-            'user_id' => $user->id,
-        ]);
-    });
-
-$factory
     ->state(User::class, 'is-co_host', [])
     ->afterCreatingState(User::class, 'is-co_host', function ($user, $faker) {
-        factory(App\Sinergia::class)->states('co-hosting')->create([
-            'user_id' => $user->id,
+        factory(App\JamRole::class)->states('as-co_host')->create([
+            'user_id' => $user->id
         ]);
     });
 
 $factory
     ->state(User::class, 'is-promoter', [])
     ->afterCreatingState(User::class, 'is-promoter', function ($user, $faker) {
-        factory(App\Sinergia::class)->states('promoting')->create([
-            'user_id' => $user->id,
+        factory(App\JamRole::class)->states('as-promoter')->create([
+            'user_id' => $user->id
         ]);
     });
-
 
 $factory->define(User::class, function (Faker $faker) {
     return [

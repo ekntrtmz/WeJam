@@ -12,6 +12,19 @@ $factory->state(JamRole::class, 'as-host', function(Faker $faker) {
     ];
 });
 
+$factory->state(JamRole::class, 'as-co_host', function(Faker $faker) {
+    return [
+        'role' => 'co_host'
+    ];
+});
+
+$factory->state(JamRole::class, 'as-promoter', function(Faker $faker) {
+    return [
+        'role' => 'promoter'
+    ];
+});
+
+
 $factory->define(JamRole::class, function (Faker $faker) {
     return [
         //
