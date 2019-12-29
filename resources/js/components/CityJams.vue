@@ -18,27 +18,27 @@
                     <div class="column is-9">
                       <div class="columns is-mobile">
                         <div class="column is-6">
-                          <p class="title">{{session.title}}</p>
+                          <p class="title jam-title">{{session.title}}</p>
                           <p class="subtitle">{{session.descr}}</p>
                         </div>
                         <div class="column is-6">
                            <nav class="level">
                             <div class="level-item has-text-centered">
                               <div>
-                                <p class="heading">Yamen</p>
-                                <p class="title">3,456</p>
+                                <p class="heading">Ya men</p>
+                                <p class="title">{{ session.yamen_count }}</p>
                               </div>
                             </div>
                             <div class="level-item has-text-centered">
                               <div>
-                                <p class="heading">Artists</p>
-                                <p class="title">123</p>
+                                <p class="heading">Instruments</p>
+                                <p class="title"> -- </p>
                               </div>
                             </div>
                             <div class="level-item has-text-centered">
                               <div>
                                 <p class="heading">Jammers</p>
-                                <p class="title">456K</p>
+                                <p class="title">{{ session.jammers_count }}</p>
                               </div>
                             </div>
                           </nav>
@@ -48,9 +48,9 @@
                         <div class="column is-6">
                           <div class="tags are-small">
                             <span v-if="session.mode == 'public'" class="tag is-light">{{session.mode}}</span>
-                            <span v-if="session.mode == 'public'" class="tag is-dark">secret</span>
-                            <span v-if="session.mode == 'public'" class="tag is-warning is-light">indoor</span>
-                            <span v-if="session.mode == 'public'" class="tag is-success is-light">outdoor</span>
+                            <span v-if="session.mode == 'secret'" class="tag is-dark">secret</span>
+                            <span v-if="session.jam_session_space == 'indoor'" class="tag is-warning is-light">indoor</span>
+                            <span v-if="session.jam_session_space == 'outdoor'" class="tag is-success is-light">outdoor</span>
                           </div>
                           <div class="media">
                             <div class="media-left">
@@ -145,6 +145,10 @@ export default {
 .jam-notification {
   margin-top: 25px;
   margin-bottom: 55px;
+}
+
+.jam-title {
+  text-transform: uppercase;
 }
 
 .jam-image {

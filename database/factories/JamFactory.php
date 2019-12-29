@@ -11,10 +11,12 @@ $factory
 
         return [
             'mode' => $faker->randomElement(
-                array('public', 'public', 'public', 'private')
+                array('public', 'public', 'public', 'secret')
                 //  Relative random 1/4 chance of public mode
             ),
-            //  Add jam session related dummy data here
+            'jam_session_space' => $faker->randomElement(
+                array('indoor', 'outdoor', 'outdoor')
+            )
         ];
 })
 ->afterCreatingState(App\Jam::class, 'jam-session', function ($jam) {

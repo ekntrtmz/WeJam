@@ -107,7 +107,6 @@ class CityController extends Controller
     {
 
         $city->load('jams.user');
-
         return view('cities.city')->with(compact('city'));
     }
 }

@@ -22,7 +22,7 @@ class CreateJamsTable extends Migration
             //  Title of the Jam  (used in both types)
             $table->string('descr');
             //  Description of the Jam (used in both types)
-            $table->enum('mode', ['public', 'private'])->nullable();
+            $table->enum('mode', ['public', 'secret']);
             //  Mode of the Jam that can be public or private (used in Jam Session)
             $table->string('banner_path')->nullable();
             //  Path to the Jam banner image (used in both types)
@@ -42,6 +42,9 @@ class CreateJamsTable extends Migration
             $table->dateTime('jam_session_time')->nullable();
             //  Time of the Jam Session
             $table->integer('jam_session_secret')->unsigned()->nullable();
+            //  Secret of the Jam Session
+            $table->enum('jam_session_space', ['indoor', 'outdoor']);
+            //  Space of the Jam Session
 
             /**
              * Open Mic related

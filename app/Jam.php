@@ -37,4 +37,6 @@ class Jam extends Model
     }
 
     protected $guarded = [];
+
+    protected $withCount = ['yamen', 'jammers'];
 }
