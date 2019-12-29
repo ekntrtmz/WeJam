@@ -24,6 +24,7 @@ $factory
         ]);
     });
 
+
 $factory
     ->state(User::class, 'has-jam', [])
     ->afterCreatingState(User::class, 'has-jam', function ($user, $faker) {

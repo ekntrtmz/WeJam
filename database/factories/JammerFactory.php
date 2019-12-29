@@ -5,7 +5,7 @@
 use App\Jammer;
 use Faker\Generator as Faker;
 
-$factory->state(Jammer::class, 'host', function(Faker $faker) {
+$factory->state(Jammer::class, 'as-host', function(Faker $faker) {
     return [
         'jammer_type' => 'host'
     ];

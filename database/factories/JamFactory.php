@@ -16,8 +16,18 @@ $factory
             ),
             //  Add jam session related dummy data here
         ];
+})
+->afterCreatingState(App\Jam::class, 'jam-session', function ($jam) {
+    //  Add type of jammer
+    factory(App\Jammer::class)->states('as-host')->create([
+        'jam_id' => $jam->id,
+        'user_id' => $jam->user_id
+    ]);
+
+    //  Add jam role
 
 });
+;
 
 $factory->state(App\Jam::class, 'open-mic', function() {
     return [
