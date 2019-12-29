@@ -1956,17 +1956,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['jams'],
   computed: {
@@ -15576,7 +15565,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".jam-column {\n  margin-bottom: 25px;\n}\n.jam-column.secret-jam {\n  border: 5px solid black;\n  border-radius: 3px;\n  box-sizing: border-box;\n}\n.jam-notification {\n  margin-top: 25px;\n  margin-bottom: 55px;\n}\n.jam-title {\n  text-transform: uppercase;\n}\n.jam-image {\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.yaman-icon {\n  background-image: url(\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMS45NDggNTExLjk0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk0OCA1MTEuOTQ4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTUwMS44MDcsMjE4LjU2NWMtMC4wNDctMC4xNjEtMC4wOTUtMC4zMjItMC4xNTItMC40ODRjLTcuNzA4LTIyLjk1NS0xNy42MTctMzguNjc1LTMwLjE3LTQ4LjENCgkJCWMtMS42MzEtMTQuMzM2LTMuOTczLTI5LjQ0OS03LjA4My00Ni40ODhjMC0wLjAzOC0wLjAxLTAuMDY2LTAuMDE5LTAuMTA0Yy03LjUwOS0zOC41MTQtMzEuNzkxLTYzLjM5My02MS44NjctNjMuMzkzaC04LjY1Nw0KCQkJYy0xNC4xMDgsMC0zMi42MzUsNS42ODktNDUuOTc2LDMwLjYyNWMtOC4zNTMtMjguMTQxLTM0LjE2Mi00OS41ODgtNjIuNzc3LTQ5LjU4OGgtMS4zOTRjLTI4Ljg3MSwwLTU0Ljg4OCwyMS44MzYtNjIuOTk1LDUwLjM0Nw0KCQkJYy0xMS45MDktMjAuMzU3LTI5LjA2MS0zMS4zODQtNDkuMjk0LTMxLjM4NGgtMS41ODNjLTI5LjM3NCwwLTU1Ljc3LDIyLjYwNC02My4zMzYsNTEuODQ1Yy0xMC45NDItMTUuNTQtMjQuNDE1LTIzLjQtNDAuMTczLTIzLjQNCgkJCWMtMTcuOTg2LDAtNDIuMzgyLDkuOTQ2LTU2LjY2MSw1Ny45NzlDLTEuODM5LDE5OC4xNDItMy4wOTEsMjUwLjY5Nyw2LjAwMiwzMDIuODY1bDMuODIxLDE4LjkzNQ0KCQkJYzguMzYzLDI4Ljc3NiwyNS43OTksNDEuNjA1LDU2LjUxLDQxLjYwNWMxNy43MywwLDMzLjA4MS02LjkwMyw0My4zNDktMTguMTY3YzEwLjAxMiwyMi4wNTQsMzIuODkxLDM3LjEyOSw2MC4xNiwzNy4xMjloMS41ODMNCgkJCWMyMC44NTksMCwzOC44NTUtOC4zNTMsNTAuNjg4LTIxLjkwMmMzLjY5OCw5LjY5LDkuODQyLDE4LjExLDE3LjYyNiwyNC44MTNjLTEuMDMzLDEuMDcxLTEuODMsMi4zMzItMi4yNzYsMy43NTUNCgkJCWMtMy43OTMsMTIuMTkzLTMuNDUxLDI4LjE4OCwwLjg4Miw0MC43MzJjOC43ODksMjUuNTA1LDMyLjI0Niw0MS4xNSw1OC40ODIsNDEuMTVjNi4zMzQsMCwxMi44MjgtMC45MiwxOS4zMjMtMi44MTYNCgkJCWMwLDAsMTIxLjk1MS0zMy45MTUsMTIyLjMwMi0zNC4wMmM0My45MjgtMTIuOTE0LDU1LjU0My00OC44Miw2My4zMjctNzIuODg0QzUxNS4zMjgsMzEzLjk1OCw1MTUuMzM3LDI2Ny4yOTksNTAxLjgwNywyMTguNTY1eg0KCQkJIE00NTUuMTQsMjI5LjIyMmMtMC4wMzgsMS40ODktMC4wOTUsMi45OTYtMC4xNTIsNC41MDRjLTAuMDk1LDIuNzEyLTAuMjE4LDUuNDYxLTAuMzcsOC4yNjhjLTAuMDc2LDEuNTE3LTAuMTUyLDMuMDM0LTAuMjQ3LDQuNTcNCgkJCWMtMC4yNTYsNC4xNTMtMC41NTksOC4zODItMC45MiwxMi44Yy0wLjA3NiwwLjkyLTAuMTgsMS44ODctMC4yNTYsMi44MTZjLTAuMzQxLDMuOTQ0LTAuNzMsOC4wMTItMS4xNTcsMTIuMjEyDQoJCQljLTAuMTMzLDEuMjg5LTAuMjY2LDIuNTg4LTAuMzk4LDMuODk3Yy0wLjU1LDUuMTM5LTEuMTM4LDEwLjQxMS0xLjgxMSwxNi4wMTRsLTQuMDIsMjcuMTgzDQoJCQljLTMuMzc1LDE1LjY2My0xMy40ODMsNDEuOTE4LTQzLjI5Miw0MS45MThoLTguNjU3Yy0yNC40NDMsMC00Mi44NjYtMTctNDMuMDQ2LTM5LjU5NXYtOTMuMTQ2YzAtNS4yNDMtNC4yNDgtOS40ODItOS40ODItOS40ODINCgkJCWMtNS4yMzQsMC05LjQ4MSw0LjIzOC05LjQ4MSw5LjQ4MnY5Mi42NjJjMCwwLjA1Ny0wLjAzOCwwLjEwNC0wLjAzOCwwLjE2MXYxNC42M2MwLDI1LjIyMS0yMC4wNzIsNDQuMjUtNDYuNzA2LDQ0LjI1aC0xLjM5NA0KCQkJYy0yLjg2MywwLTUuNjMyLTAuMzIyLTguMzQ0LTAuNzY4Yy0wLjgyNS0wLjE0Mi0xLjY1LTAuMzAzLTIuNDc1LTAuNDg0Yy0yLjEzMy0wLjQ2NS00LjItMS4wNjItNi4yMDEtMS43OTINCgkJCWMtMC41NS0wLjE5OS0xLjEyOC0wLjMzMi0xLjY3OC0wLjU1OWMtMTYuNTI2LTYuNjY1LTI3Ljg0Ny0yMS45OTctMjcuOTgtNDAuMzM0di05OC4yODVjMC01LjI0My00LjI0OC05LjQ4MS05LjQ4Mi05LjQ4MQ0KCQkJYy01LjIzNCwwLTkuNDgxLDQuMjM4LTkuNDgxLDkuNDgxdjc5LjY0NGMwLDAuMDU3LTAuMDM4LDAuMTA0LTAuMDM4LDAuMTYxYzAsMjQuNzY2LTIwLjAzNCw0My40NTQtNDYuNjExLDQzLjQ1NGgtMS41ODMNCgkJCWMtMjYuNTc3LDAtNDYuNjItMTguNjg4LTQ2LjYyLTQzLjQ1NHYtMy43OTNjMC4wMS0wLjA1NywwLjAzOC0wLjEwNCwwLjAzOC0wLjE2MXYtNzUuODUyYzAtNS4yNDMtNC4yNDgtOS40ODEtOS40ODItOS40ODENCgkJCXMtOS40ODEsNC4yMzgtOS40ODEsOS40ODF2NjkuMzY3YzAsMC4wNTctMC4wMzgsMC4xMDQtMC4wMzgsMC4xNjFjMCwxOS44MjYtMTYuMjk5LDM0Ljc2OS0zNy45MjYsMzQuNzY5DQoJCQljLTIyLjU1NiwwLTMyLjIyOC03LjA0NS0zOC4xMDYtMjcuMTQ2bC0zLjU4NC0xNy45MmMtOC42MTktNDkuNDc0LTcuNDMzLTk5LjU0NiwzLjM3NS0xNDguMTg2DQoJCQljOC42NDctMjkuMDUxLDIxLjU0Mi00My43ODUsMzguMzE1LTQzLjc4NWMxMS40ODIsMCwyMS4xNjMsNy42NzEsMjkuNjAxLDIzLjQzOGMxLjY1LDMuMDgxLDQuODY0LDUuMDA2LDguMzYzLDUuMDA2aDkuNTY3DQoJCQljNS4wODIsMCw5LjI2My00LjAwMSw5LjQ3Mi05LjA4M2MxLjEtMjUuOTEzLDIyLjM5NS00Ny44MDYsNDYuNTA3LTQ3LjgwNmgxLjU4M2MyMC4zMTksMCwzMS44MiwxNy40NDYsMzcuODg4LDMyLjA3Ng0KCQkJYzEuNDcsMy41NDYsNC45Myw1Ljg1LDguNzYxLDUuODVoOS41NzZjNS4wNzMsMCw5LjI0NC0zLjk5Miw5LjQ3Mi05LjA2NGMxLjEzOC0yNS45MjIsMjIuNDgxLTQ3LjgyNSw0Ni41OTItNDcuODI1aDEuMzk0DQoJCQljMjQuMTIxLDAsNDUuNDU0LDIxLjkwMiw0Ni41OTIsNDcuODI1YzAuMjI4LDUuMDYzLDQuMzk5LDkuMDY0LDkuNDcyLDkuMDY0aDkuNjQzYzMuOTgyLDAsNy41NDctMi40OTQsOC45MTMtNi4yMzkNCgkJCWM3LjYzMy0yMS4wMywxOS4xMjQtMzEuNjg3LDM0LjEzMy0zMS42ODdoOC42NTdjMjQuOTkzLDAsMzguOTAzLDI1Ljg0Nyw0My4yNDUsNDguMDA1YzMuNDYxLDE4LjkzNSw1LjkzNSwzNS40MjMsNy41LDUxLjEyNA0KCQkJYzAuMDA5LDAuMDY2LTAuMDI4LDAuMTMzLTAuMDE5LDAuMTk5YzAuODUzLDguNjQ3LDEuNDUxLDE3LjAxLDEuNzczLDI1LjQyOWMwLjAwOSwwLjM4OSwwLjAyOCwwLjc3OCwwLjAzOCwxLjE3Ng0KCQkJYzAuMTMzLDMuNzY0LDAuMTk5LDcuNTQ3LDAuMjI4LDExLjM3OGMwLDAuNDY1LDAuMDA5LDAuOTEsMC4wMTksMS4zNzVDNDU1LjMwMSwyMjEuNDI4LDQ1NS4yNDQsMjI1LjI5Nyw0NTUuMTQsMjI5LjIyMnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==\");\n  display: block;\n  width: 20px;\n  height: 20px;\n  background-size: contain;\n  background-origin: content-box;\n  background-position: center;\n  background-repeat: no-repeat;\n  margin-right: 5px;\n}", ""]);
+exports.push([module.i, ".jam-column {\n  margin-bottom: 25px;\n}\n.jam-column.secret-jam .box {\n  border: 5px solid #ba1200;\n  box-sizing: border-box;\n}\n.jam-notification {\n  margin-top: 25px;\n  margin-bottom: 55px;\n}\n.jam-tags {\n  margin-bottom: 0px !important;\n}\n.jam-title {\n  text-transform: uppercase;\n}\n.jam-image {\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n.host-wrapper {\n  position: absolute;\n  bottom: 0;\n  z-index: 1;\n  background: rgba(255, 255, 255, 0.9);\n  width: 100%;\n  padding: 10px;\n}\n.jam-info {\n  background: whitesmoke;\n  border-radius: 5px;\n  padding: 5px;\n  margin-bottom: 5px !important;\n}\n.jam-meta-box {\n  background: whitesmoke;\n  padding: 5px;\n  margin-bottom: 7px;\n  font-size: 14px;\n  border-radius: 5px;\n}\n.jam-meta-box .icon {\n  color: #363636;\n  font-size: 12px;\n}\n.jam-actions {\n  margin-top: 15px;\n}\n.yaman-icon {\n  background-image: url(\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMS45NDggNTExLjk0OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjk0OCA1MTEuOTQ4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTUwMS44MDcsMjE4LjU2NWMtMC4wNDctMC4xNjEtMC4wOTUtMC4zMjItMC4xNTItMC40ODRjLTcuNzA4LTIyLjk1NS0xNy42MTctMzguNjc1LTMwLjE3LTQ4LjENCgkJCWMtMS42MzEtMTQuMzM2LTMuOTczLTI5LjQ0OS03LjA4My00Ni40ODhjMC0wLjAzOC0wLjAxLTAuMDY2LTAuMDE5LTAuMTA0Yy03LjUwOS0zOC41MTQtMzEuNzkxLTYzLjM5My02MS44NjctNjMuMzkzaC04LjY1Nw0KCQkJYy0xNC4xMDgsMC0zMi42MzUsNS42ODktNDUuOTc2LDMwLjYyNWMtOC4zNTMtMjguMTQxLTM0LjE2Mi00OS41ODgtNjIuNzc3LTQ5LjU4OGgtMS4zOTRjLTI4Ljg3MSwwLTU0Ljg4OCwyMS44MzYtNjIuOTk1LDUwLjM0Nw0KCQkJYy0xMS45MDktMjAuMzU3LTI5LjA2MS0zMS4zODQtNDkuMjk0LTMxLjM4NGgtMS41ODNjLTI5LjM3NCwwLTU1Ljc3LDIyLjYwNC02My4zMzYsNTEuODQ1Yy0xMC45NDItMTUuNTQtMjQuNDE1LTIzLjQtNDAuMTczLTIzLjQNCgkJCWMtMTcuOTg2LDAtNDIuMzgyLDkuOTQ2LTU2LjY2MSw1Ny45NzlDLTEuODM5LDE5OC4xNDItMy4wOTEsMjUwLjY5Nyw2LjAwMiwzMDIuODY1bDMuODIxLDE4LjkzNQ0KCQkJYzguMzYzLDI4Ljc3NiwyNS43OTksNDEuNjA1LDU2LjUxLDQxLjYwNWMxNy43MywwLDMzLjA4MS02LjkwMyw0My4zNDktMTguMTY3YzEwLjAxMiwyMi4wNTQsMzIuODkxLDM3LjEyOSw2MC4xNiwzNy4xMjloMS41ODMNCgkJCWMyMC44NTksMCwzOC44NTUtOC4zNTMsNTAuNjg4LTIxLjkwMmMzLjY5OCw5LjY5LDkuODQyLDE4LjExLDE3LjYyNiwyNC44MTNjLTEuMDMzLDEuMDcxLTEuODMsMi4zMzItMi4yNzYsMy43NTUNCgkJCWMtMy43OTMsMTIuMTkzLTMuNDUxLDI4LjE4OCwwLjg4Miw0MC43MzJjOC43ODksMjUuNTA1LDMyLjI0Niw0MS4xNSw1OC40ODIsNDEuMTVjNi4zMzQsMCwxMi44MjgtMC45MiwxOS4zMjMtMi44MTYNCgkJCWMwLDAsMTIxLjk1MS0zMy45MTUsMTIyLjMwMi0zNC4wMmM0My45MjgtMTIuOTE0LDU1LjU0My00OC44Miw2My4zMjctNzIuODg0QzUxNS4zMjgsMzEzLjk1OCw1MTUuMzM3LDI2Ny4yOTksNTAxLjgwNywyMTguNTY1eg0KCQkJIE00NTUuMTQsMjI5LjIyMmMtMC4wMzgsMS40ODktMC4wOTUsMi45OTYtMC4xNTIsNC41MDRjLTAuMDk1LDIuNzEyLTAuMjE4LDUuNDYxLTAuMzcsOC4yNjhjLTAuMDc2LDEuNTE3LTAuMTUyLDMuMDM0LTAuMjQ3LDQuNTcNCgkJCWMtMC4yNTYsNC4xNTMtMC41NTksOC4zODItMC45MiwxMi44Yy0wLjA3NiwwLjkyLTAuMTgsMS44ODctMC4yNTYsMi44MTZjLTAuMzQxLDMuOTQ0LTAuNzMsOC4wMTItMS4xNTcsMTIuMjEyDQoJCQljLTAuMTMzLDEuMjg5LTAuMjY2LDIuNTg4LTAuMzk4LDMuODk3Yy0wLjU1LDUuMTM5LTEuMTM4LDEwLjQxMS0xLjgxMSwxNi4wMTRsLTQuMDIsMjcuMTgzDQoJCQljLTMuMzc1LDE1LjY2My0xMy40ODMsNDEuOTE4LTQzLjI5Miw0MS45MThoLTguNjU3Yy0yNC40NDMsMC00Mi44NjYtMTctNDMuMDQ2LTM5LjU5NXYtOTMuMTQ2YzAtNS4yNDMtNC4yNDgtOS40ODItOS40ODItOS40ODINCgkJCWMtNS4yMzQsMC05LjQ4MSw0LjIzOC05LjQ4MSw5LjQ4MnY5Mi42NjJjMCwwLjA1Ny0wLjAzOCwwLjEwNC0wLjAzOCwwLjE2MXYxNC42M2MwLDI1LjIyMS0yMC4wNzIsNDQuMjUtNDYuNzA2LDQ0LjI1aC0xLjM5NA0KCQkJYy0yLjg2MywwLTUuNjMyLTAuMzIyLTguMzQ0LTAuNzY4Yy0wLjgyNS0wLjE0Mi0xLjY1LTAuMzAzLTIuNDc1LTAuNDg0Yy0yLjEzMy0wLjQ2NS00LjItMS4wNjItNi4yMDEtMS43OTINCgkJCWMtMC41NS0wLjE5OS0xLjEyOC0wLjMzMi0xLjY3OC0wLjU1OWMtMTYuNTI2LTYuNjY1LTI3Ljg0Ny0yMS45OTctMjcuOTgtNDAuMzM0di05OC4yODVjMC01LjI0My00LjI0OC05LjQ4MS05LjQ4Mi05LjQ4MQ0KCQkJYy01LjIzNCwwLTkuNDgxLDQuMjM4LTkuNDgxLDkuNDgxdjc5LjY0NGMwLDAuMDU3LTAuMDM4LDAuMTA0LTAuMDM4LDAuMTYxYzAsMjQuNzY2LTIwLjAzNCw0My40NTQtNDYuNjExLDQzLjQ1NGgtMS41ODMNCgkJCWMtMjYuNTc3LDAtNDYuNjItMTguNjg4LTQ2LjYyLTQzLjQ1NHYtMy43OTNjMC4wMS0wLjA1NywwLjAzOC0wLjEwNCwwLjAzOC0wLjE2MXYtNzUuODUyYzAtNS4yNDMtNC4yNDgtOS40ODEtOS40ODItOS40ODENCgkJCXMtOS40ODEsNC4yMzgtOS40ODEsOS40ODF2NjkuMzY3YzAsMC4wNTctMC4wMzgsMC4xMDQtMC4wMzgsMC4xNjFjMCwxOS44MjYtMTYuMjk5LDM0Ljc2OS0zNy45MjYsMzQuNzY5DQoJCQljLTIyLjU1NiwwLTMyLjIyOC03LjA0NS0zOC4xMDYtMjcuMTQ2bC0zLjU4NC0xNy45MmMtOC42MTktNDkuNDc0LTcuNDMzLTk5LjU0NiwzLjM3NS0xNDguMTg2DQoJCQljOC42NDctMjkuMDUxLDIxLjU0Mi00My43ODUsMzguMzE1LTQzLjc4NWMxMS40ODIsMCwyMS4xNjMsNy42NzEsMjkuNjAxLDIzLjQzOGMxLjY1LDMuMDgxLDQuODY0LDUuMDA2LDguMzYzLDUuMDA2aDkuNTY3DQoJCQljNS4wODIsMCw5LjI2My00LjAwMSw5LjQ3Mi05LjA4M2MxLjEtMjUuOTEzLDIyLjM5NS00Ny44MDYsNDYuNTA3LTQ3LjgwNmgxLjU4M2MyMC4zMTksMCwzMS44MiwxNy40NDYsMzcuODg4LDMyLjA3Ng0KCQkJYzEuNDcsMy41NDYsNC45Myw1Ljg1LDguNzYxLDUuODVoOS41NzZjNS4wNzMsMCw5LjI0NC0zLjk5Miw5LjQ3Mi05LjA2NGMxLjEzOC0yNS45MjIsMjIuNDgxLTQ3LjgyNSw0Ni41OTItNDcuODI1aDEuMzk0DQoJCQljMjQuMTIxLDAsNDUuNDU0LDIxLjkwMiw0Ni41OTIsNDcuODI1YzAuMjI4LDUuMDYzLDQuMzk5LDkuMDY0LDkuNDcyLDkuMDY0aDkuNjQzYzMuOTgyLDAsNy41NDctMi40OTQsOC45MTMtNi4yMzkNCgkJCWM3LjYzMy0yMS4wMywxOS4xMjQtMzEuNjg3LDM0LjEzMy0zMS42ODdoOC42NTdjMjQuOTkzLDAsMzguOTAzLDI1Ljg0Nyw0My4yNDUsNDguMDA1YzMuNDYxLDE4LjkzNSw1LjkzNSwzNS40MjMsNy41LDUxLjEyNA0KCQkJYzAuMDA5LDAuMDY2LTAuMDI4LDAuMTMzLTAuMDE5LDAuMTk5YzAuODUzLDguNjQ3LDEuNDUxLDE3LjAxLDEuNzczLDI1LjQyOWMwLjAwOSwwLjM4OSwwLjAyOCwwLjc3OCwwLjAzOCwxLjE3Ng0KCQkJYzAuMTMzLDMuNzY0LDAuMTk5LDcuNTQ3LDAuMjI4LDExLjM3OGMwLDAuNDY1LDAuMDA5LDAuOTEsMC4wMTksMS4zNzVDNDU1LjMwMSwyMjEuNDI4LDQ1NS4yNDQsMjI1LjI5Nyw0NTUuMTQsMjI5LjIyMnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==\");\n  display: block;\n  width: 20px;\n  height: 20px;\n  background-size: contain;\n  background-origin: content-box;\n  background-position: center;\n  background-repeat: no-repeat;\n  margin-right: 5px;\n}", ""]);
 
 // exports
 
@@ -33884,7 +33873,10 @@ var render = function() {
     [
       _c(
         "b-tabs",
-        { staticClass: "block", attrs: { position: "is-right is-toggle" } },
+        {
+          staticClass: "block",
+          attrs: { position: "is-left is-toggle", animated: false }
+        },
         [
           _c("b-tab-item", { attrs: { label: "Jam Sessions" } }, [
             _c(
@@ -33921,93 +33913,73 @@ var render = function() {
                       class: { "secret-jam": session.mode == "secret" }
                     },
                     [
-                      _c("div", { staticClass: "box columns has-shadow" }, [
-                        _c("div", { staticClass: "column is-3" }, [
-                          _c("figure", { staticClass: "image is-square" }, [
-                            _c("img", {
-                              staticClass: "jam-image",
-                              attrs: {
-                                src: "/img/jam_placeholder.jpg",
-                                alt: "jam_image"
-                              }
-                            })
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "column is-9" }, [
-                          _c("div", { staticClass: "columns is-mobile" }, [
-                            _c("div", { staticClass: "column is-6" }, [
-                              _c("p", { staticClass: "title jam-title" }, [
-                                _vm._v(_vm._s(session.title))
+                      _c(
+                        "div",
+                        { staticClass: "box columns has-shadow is-multiline" },
+                        [
+                          _c("div", { staticClass: "column is-3" }, [
+                            _c("figure", { staticClass: "image is-square" }, [
+                              _c("div", { staticClass: "host-wrapper" }, [
+                                _c("div", { staticClass: "media" }, [
+                                  _c("div", { staticClass: "media-left" }, [
+                                    _c(
+                                      "figure",
+                                      { staticClass: "image is-48x48" },
+                                      [
+                                        _c("img", {
+                                          staticClass: "is-rounded",
+                                          attrs: {
+                                            src: "/img/96x96.png",
+                                            alt: "Placeholder image"
+                                          }
+                                        })
+                                      ]
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "media-content" }, [
+                                    _c(
+                                      "a",
+                                      {
+                                        staticClass:
+                                          "is-size-6 has-text-primary",
+                                        attrs: {
+                                          href:
+                                            "/artists/" + session.user.username
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          " ~" + _vm._s(session.user.username)
+                                        ),
+                                        _c("br")
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", { staticClass: "subtitle is-6" }, [
+                                      _c("span", { staticClass: "is-size-7" }, [
+                                        _vm._v("[Rating]")
+                                      ])
+                                    ])
+                                  ])
+                                ])
                               ]),
                               _vm._v(" "),
-                              _c("p", { staticClass: "subtitle" }, [
-                                _vm._v(_vm._s(session.descr))
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "column is-6" }, [
-                              _c("nav", { staticClass: "level" }, [
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "level-item has-text-centered"
-                                  },
-                                  [
-                                    _c("div", [
-                                      _c("p", { staticClass: "heading" }, [
-                                        _vm._v("Ya men")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "title" }, [
-                                        _vm._v(_vm._s(session.yamen_count))
-                                      ])
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "level-item has-text-centered"
-                                  },
-                                  [
-                                    _c("div", [
-                                      _c("p", { staticClass: "heading" }, [
-                                        _vm._v("Instruments")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "title" }, [
-                                        _vm._v(" -- ")
-                                      ])
-                                    ])
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "level-item has-text-centered"
-                                  },
-                                  [
-                                    _c("div", [
-                                      _c("p", { staticClass: "heading" }, [
-                                        _vm._v("Jammers")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "title" }, [
-                                        _vm._v(_vm._s(session.jammers_count))
-                                      ])
-                                    ])
-                                  ]
-                                )
-                              ])
+                              _c("img", {
+                                staticClass: "jam-image",
+                                attrs: {
+                                  src: "/img/jam_placeholder.jpg",
+                                  alt: "jam_image"
+                                }
+                              })
                             ])
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "columns is-multiline" }, [
-                            _c("div", { staticClass: "column is-6" }, [
-                              _c("div", { staticClass: "tags are-small" }, [
+                          _c("div", { staticClass: "column is-5" }, [
+                            _c(
+                              "div",
+                              { staticClass: "tags are-small jam-tags" },
+                              [
                                 session.mode == "public"
                                   ? _c(
                                       "span",
@@ -34017,9 +33989,11 @@ var render = function() {
                                   : _vm._e(),
                                 _vm._v(" "),
                                 session.mode == "secret"
-                                  ? _c("span", { staticClass: "tag is-dark" }, [
-                                      _vm._v("secret")
-                                    ])
+                                  ? _c(
+                                      "span",
+                                      { staticClass: "tag is-primary" },
+                                      [_vm._v("secret")]
+                                    )
                                   : _vm._e(),
                                 _vm._v(" "),
                                 session.jam_session_space == "indoor"
@@ -34041,63 +34015,86 @@ var render = function() {
                                       [_vm._v("outdoor")]
                                     )
                                   : _vm._e()
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "media" }, [
-                                _c("div", { staticClass: "media-left" }, [
-                                  _c(
-                                    "figure",
-                                    { staticClass: "image is-48x48" },
-                                    [
-                                      _c("img", {
-                                        staticClass: "is-rounded",
-                                        attrs: {
-                                          src: "/img/96x96.png",
-                                          alt: "Placeholder image"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "media-content" }, [
-                                  _c(
-                                    "a",
-                                    {
-                                      staticClass: "is-size-6 has-text-primary",
-                                      attrs: {
-                                        href:
-                                          "/artists/" + session.user.username
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        " ~" + _vm._s(session.user.username)
-                                      ),
-                                      _c("br")
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "subtitle is-6" }, [
-                                    _c("span", { staticClass: "is-size-7" }, [
-                                      _vm._v("[Rating]")
-                                    ])
-                                  ])
-                                ])
-                              ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "title jam-title" }, [
+                              _vm._v(_vm._s(session.title))
                             ]),
                             _vm._v(" "),
-                            _c("div", { staticClass: "column is-6" }, [
+                            _c("p", { staticClass: "subtitle" }, [
+                              _vm._v(_vm._s(session.descr))
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "column is-4" }, [
+                            _c("nav", { staticClass: "level jam-info" }, [
                               _c(
                                 "div",
-                                { staticClass: "columns is-multiline" },
+                                { staticClass: "level-item has-text-centered" },
+                                [
+                                  _c("div", [
+                                    _c("p", { staticClass: "heading" }, [
+                                      _vm._v("Yamen")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", { staticClass: "title" }, [
+                                      _vm._v(_vm._s(session.yamen_count))
+                                    ])
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "level-item has-text-centered" },
+                                [
+                                  _c("div", [
+                                    _c("p", { staticClass: "heading" }, [
+                                      _vm._v("Instruments")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", { staticClass: "title" }, [
+                                      _vm._v(" -- ")
+                                    ])
+                                  ])
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "level-item has-text-centered" },
+                                [
+                                  _c("div", [
+                                    _c("p", { staticClass: "heading" }, [
+                                      _vm._v("Jammers")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("p", { staticClass: "title" }, [
+                                      _vm._v(_vm._s(session.jammers_count))
+                                    ])
+                                  ])
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "column is-12" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "columns is-multiline is-mobile  jam-meta-wrapper"
+                                },
                                 [
                                   _c(
                                     "div",
-                                    { staticClass: "column is-6 is-primary" },
+                                    { staticClass: "jam-meta-box column is-6" },
                                     [
                                       _c("b-icon", {
-                                        attrs: { icon: "calendar" }
+                                        attrs: {
+                                          type: "small",
+                                          icon: "calendar-day"
+                                        }
                                       }),
                                       _vm._v(" "),
                                       _c("span", [
@@ -34109,7 +34106,7 @@ var render = function() {
                                   _vm._v(" "),
                                   _c(
                                     "div",
-                                    { staticClass: "column is-6" },
+                                    { staticClass: "jam-meta-box column is-6" },
                                     [
                                       _c("b-icon", {
                                         attrs: { icon: "clock" }
@@ -34124,9 +34121,13 @@ var render = function() {
                                   _vm._v(" "),
                                   _c(
                                     "div",
-                                    { staticClass: "column is-6" },
+                                    {
+                                      staticClass: "jam-meta-box column is-12"
+                                    },
                                     [
-                                      _c("b-icon", { attrs: { icon: "map" } }),
+                                      _c("b-icon", {
+                                        attrs: { icon: "map-marker-alt" }
+                                      }),
                                       _vm._v(" "),
                                       _c("span", [
                                         _vm._v(
@@ -34135,96 +34136,83 @@ var render = function() {
                                       ])
                                     ],
                                     1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "column is-6" },
-                                    [_c("b-icon", { attrs: { icon: "star" } })],
-                                    1
                                   )
                                 ]
                               )
                             ]),
                             _vm._v(" "),
-                            _c("div", { staticClass: "column is-12" }, [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "field has-addons is-pulled-right"
-                                },
-                                [
-                                  _c("p", { staticClass: "control" }, [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "button yaman-button",
-                                        attrs: { href: "#yaman" }
-                                      },
-                                      [
-                                        _c("span", {
-                                          staticClass: "yaman-icon"
-                                        }),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Ya Man")])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "control" }, [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "button",
-                                        attrs: { href: "#join" }
-                                      },
-                                      [
-                                        _c(
-                                          "span",
-                                          { staticClass: "icon is-small" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-user-plus"
-                                            })
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Join")])
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "control" }, [
-                                    _c(
-                                      "a",
-                                      {
-                                        staticClass: "button",
-                                        attrs: {
-                                          href: "/jam-sessions/" + session.slug
-                                        }
-                                      },
-                                      [
-                                        _c(
-                                          "span",
-                                          { staticClass: "icon is-small" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-info-circle"
-                                            })
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c("span", [_vm._v("Details")])
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              )
-                            ])
+                            _c(
+                              "div",
+                              { staticClass: "field has-addons jam-actions" },
+                              [
+                                _c("p", { staticClass: "control" }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "button yaman-button",
+                                      attrs: { href: "#yaman" }
+                                    },
+                                    [
+                                      _c("span", { staticClass: "yaman-icon" }),
+                                      _vm._v(" "),
+                                      _c("span", [_vm._v("Yaman")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "control" }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "button",
+                                      attrs: { href: "#join" }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        { staticClass: "icon is-small" },
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-user-plus"
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("span", [_vm._v("Join")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "control" }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "button",
+                                      attrs: {
+                                        href: "/jam-sessions/" + session.slug
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        { staticClass: "icon is-small" },
+                                        [
+                                          _c("i", {
+                                            staticClass:
+                                              "fas fa-question-circle"
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("span", [_vm._v("Details")])
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
                           ])
-                        ])
-                      ])
+                        ]
+                      )
                     ]
                   )
                 })
