@@ -19,7 +19,7 @@ class CreateJammersTable extends Migration
             //  Relationship to Jam
             $table->integer('user_id');
             //  Relationship to User
-            $table->enum('jammer_type', ['host', 'performer'])->nullable();
+            $table->enum('jammer_type', ['host', 'performer', 'default']);
             //  Jammer types: Basic Jammer (not performing or hosting) if is null
             $table->timestamps();
         });

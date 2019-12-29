@@ -17,6 +17,20 @@ $factory->state(Jammer::class, 'as-performer', function(Faker $faker) {
     ];
 });
 
+$factory->state(Jammer::class, 'as-default', function(Faker $faker) {
+    return [
+        'jammer_type' => $faker->randomElement(
+            array('default', 'default', 'performer'))
+    ];
+})
+->afterCreatingState(Jammer::class, 'as-default', function ($jammer) {
+    //  Add yaman
+    factory(App\Yaman::class)->create([
+        'jam_id' => $jammer->jam_id,
+        'user_id' => $jammer->user_id
+    ]);
+});
+
 $factory->define(Jammer::class, function (Faker $faker) {
     return [
         //

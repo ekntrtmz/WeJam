@@ -11,7 +11,7 @@ class YamenTableSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Yamen', 300)->create();
+        factory('App\Yaman', 300)->create();
         //  Create 300 x Likes
     }
 }

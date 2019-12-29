@@ -40,6 +40,7 @@ $factory
     ];
 })
 ->afterCreatingState(JamRole::class, 'is-promoter', function($jamRole){
+
     //  Add yaman
     factory(App\Yaman::class)->create([
         'jam_id' => $jamRole->jam_id,
@@ -51,6 +52,7 @@ $factory
         'jam_id' => $jamRole->jam_id,
         'user_id' => $jamRole->user_id
     ]);
+
 });
 
 $factory

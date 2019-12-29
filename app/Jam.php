@@ -26,10 +26,14 @@ class Jam extends Model
     }
 
     //
-
-    public function sinergias()
+    public function jammers()
     {
-        return $this->hasMany(Sinergia::class);
+        return $this->hasMany(Jammer::class);
+    }
+
+    public function yamen()
+    {
+        return $this->hasMany(Yaman::class);
     }
 
     protected $guarded = [];

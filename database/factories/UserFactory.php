@@ -41,6 +41,14 @@ $factory
         ]);
     });
 
+$factory
+    ->state(User::class, 'is-default', [])
+    ->afterCreatingState(User::class, 'is-default', function ($user, $faker) {
+        factory(App\Jammer::class)->states('as-default')->create([
+            'user_id' => $user->id
+        ]);
+    });
+
 $factory->define(User::class, function (Faker $faker) {
     return [
         'username' => $faker->userName,
