@@ -25,7 +25,10 @@ $factory
     ]);
 
     //  Add jam role
-
+    factory(App\JamRole::class)->states('as-host')->create([
+        'jam_id' => $jam->id,
+        'user_id' => $jam->user_id
+    ]);
 });
 ;
 
