@@ -37,7 +37,7 @@ class UsersTableSeeder extends Seeder
         factory('App\User', 25)->states('is-promoter')->create();
         //  25 x Users as random Jam Session promoters
 
-        //factory('App\User', 150)->create();
+        factory('App\User', 150)->create();
         //  150 x Regular Users
 
 
