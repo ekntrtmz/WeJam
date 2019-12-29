@@ -29,6 +29,13 @@ $factory
         'jam_id' => $jam->id,
         'user_id' => $jam->user_id
     ]);
+
+    //  Add yaman
+    factory(App\Yaman::class)->create([
+        'jam_id' => $jam->id,
+        'user_id' => $jam->user_id
+    ]);
+
 });
 ;
 
