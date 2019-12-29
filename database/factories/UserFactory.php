@@ -28,7 +28,7 @@ $factory
 $factory
     ->state(User::class, 'is-co_host', [])
     ->afterCreatingState(User::class, 'is-co_host', function ($user, $faker) {
-        factory(App\JamRole::class)->states('as-co_host')->create([
+        factory(App\JamRole::class)->states('is-co_host')->create([
             'user_id' => $user->id
         ]);
     });
@@ -36,7 +36,7 @@ $factory
 $factory
     ->state(User::class, 'is-promoter', [])
     ->afterCreatingState(User::class, 'is-promoter', function ($user, $faker) {
-        factory(App\JamRole::class)->states('as-promoter')->create([
+        factory(App\JamRole::class)->states('is-promoter')->create([
             'user_id' => $user->id
         ]);
     });

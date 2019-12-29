@@ -11,7 +11,7 @@ $factory->state(Jammer::class, 'as-host', function(Faker $faker) {
     ];
 });
 
-$factory->state(Jammer::class, 'performer', function(Faker $faker) {
+$factory->state(Jammer::class, 'as-performer', function(Faker $faker) {
     return [
         'jammer_type' => 'performer'
     ];
