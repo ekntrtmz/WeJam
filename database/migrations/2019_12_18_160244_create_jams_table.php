@@ -37,9 +37,11 @@ class CreateJamsTable extends Migration
              * Jam Session related
              *
             */
+            $table->string('jam_session_location')->nullable();
+            //  Location of the Jam Session
             $table->date('jam_session_date')->nullable();
             //  Date of the Jam Session
-            $table->dateTime('jam_session_time')->nullable();
+            $table->time('jam_session_time')->nullable();
             //  Time of the Jam Session
             $table->integer('jam_session_secret')->unsigned()->nullable();
             //  Secret of the Jam Session

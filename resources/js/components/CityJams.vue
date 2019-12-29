@@ -8,7 +8,7 @@
                     adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
                     consectetur adipiscing elit
                   </div>
-                <div class="column is-12 jam-column" v-for="session in jam_sessions" :key="session.id">
+                <div :class="{'secret-jam' : (session.mode == 'secret')}" class="column is-12 jam-column" v-for="session in jam_sessions" :key="session.id">
                   <div class="box columns has-shadow">
                     <div class="column is-3">
                       <figure class="image is-square">
@@ -68,12 +68,15 @@
                           <div class="columns is-multiline">
                             <div class="column is-6 is-primary">
                               <b-icon icon="calendar" ></b-icon>
+                              <span>{{ session.jam_session_date }}</span>
                             </div>
                             <div class="column is-6">
                               <b-icon icon="clock" ></b-icon>
+                              <span>{{ session.jam_session_time }}</span>
                             </div>
                             <div class="column is-6">
                               <b-icon icon="map" ></b-icon>
+                              <span>{{ session.jam_session_location }}</span>
                             </div>
                             <div class="column is-6">
                               <b-icon icon="star" ></b-icon>
@@ -140,6 +143,13 @@ export default {
 <style lang="scss">
 .jam-column {
   margin-bottom: 25px;
+
+  &.secret-jam {
+    border: 5px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
 }
 
 .jam-notification {

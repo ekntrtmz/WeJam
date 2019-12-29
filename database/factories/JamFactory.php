@@ -16,7 +16,10 @@ $factory
             ),
             'jam_session_space' => $faker->randomElement(
                 array('indoor', 'outdoor', 'outdoor')
-            )
+            ),
+            'jam_session_location' => $faker->streetAddress(),
+            'jam_session_date' => $faker->date(),
+            'jam_session_time' => $faker->time(),
         ];
 })
 ->afterCreatingState(App\Jam::class, 'jam-session', function ($jam) {
