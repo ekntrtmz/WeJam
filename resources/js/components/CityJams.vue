@@ -16,13 +16,13 @@
                           <div class="media">
                             <div class="media-left">
                               <figure class="image is-48x48">
-                                <a :href="'/jammers/'+session.user.username">
+                                <a :href="'/'+session.user.username">
                                   <img class="is-rounded host-image" src="/img/96x96.png" alt="Placeholder image">
                                 </a>
                               </figure>
                             </div>
                             <div class="media-content">
-                              <a :href="'/jammers/'+session.user.username" class="is-size-6 has-text-primary"> ~{{session.user.username}}<br></a>
+                              <a :href="'/'+session.user.username" class="is-size-6 has-text-primary"> ~{{session.user.username}}<br></a>
                               <p class="subtitle is-6"><span class="is-size-7">Jam Host</span></p>
                             </div>
                           </div>

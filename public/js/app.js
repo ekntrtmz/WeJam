@@ -33933,9 +33933,7 @@ var render = function() {
                                           "a",
                                           {
                                             attrs: {
-                                              href:
-                                                "/jammers/" +
-                                                session.user.username
+                                              href: "/" + session.user.username
                                             }
                                           },
                                           [
@@ -33960,8 +33958,7 @@ var render = function() {
                                         staticClass:
                                           "is-size-6 has-text-primary",
                                         attrs: {
-                                          href:
-                                            "/jammers/" + session.user.username
+                                          href: "/" + session.user.username
                                         }
                                       },
                                       [
