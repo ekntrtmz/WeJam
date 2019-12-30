@@ -101,7 +101,7 @@
                           </div>
                         </div>
                       </div>
-                      <a :href="'/jam-sessions/'+session.slug" class="button is-fullwidth is-info is-rounded">Jam Details</a>
+                      <a :href="'/jam-sessions/'+session.slug" class="button is-fullwidth is-outlined is-info">Jam Details</a>
                     </div>
                   </div>
                 </div>

@@ -34237,7 +34237,7 @@ var render = function() {
                               "a",
                               {
                                 staticClass:
-                                  "button is-fullwidth is-info is-rounded",
+                                  "button is-fullwidth is-outlined is-info",
                                 attrs: { href: "/jam-sessions/" + session.slug }
                               },
                               [_vm._v("Jam Details")]
