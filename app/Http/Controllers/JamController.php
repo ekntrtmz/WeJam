@@ -96,7 +96,7 @@ class JamController extends Controller
         if($jam->type != 'jam_session') {
             abort(404);
         }
-        $jam->load('sinergias', 'city', 'user');
+        $jam->load('city', 'user');
 
         return $jam;
 
@@ -115,7 +115,7 @@ class JamController extends Controller
             abort(404);
         }
 
-        $jam->load('sinergias', 'city');
+        $jam->load('city');
 
         return $jam;
 

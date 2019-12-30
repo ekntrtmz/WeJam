@@ -29,11 +29,6 @@ Auth::routes([
 ]);
 
 
-//  User
-Route::get('/jammers', 'UserController@jammers')->name('users.jammers');
-Route::get('/{user}', 'UserController@jammer')->name('users.jammer');
-//  Route::get('/me', 'UserConroller@me')->name('users.me'); //  with middleware(auth)
-
 //  Jam
 Route::get('/jam-sessions', 'JamController@jam_sessions')->name('jams.jam_sessions');
 Route::get('/jam-sessions/{jam}', 'JamController@jam_session')->name('jams.jam_session');
@@ -46,3 +41,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //  City
 Route::get('/cities', 'CityController@cities')->name('cities.cities');
 Route::get('/cities/{city}', 'CityController@city')->name('cities.city');
+
+//  User
+Route::get('/jammers', 'UserController@jammers')->name('users.jammers');
+Route::get('/{user}', 'UserController@jammer')->name('users.jammer');
+//  Route::get('/me', 'UserConroller@me')->name('users.me'); //  with middleware(auth)
