@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
-    public function artists()
+    public function jammers()
     {
         return User::with('jams')->get();
     }
 
     //
-    public function artist(User $user)
+    public function jammer(User $user)
     {
         $user->load('jams');
         return $user;

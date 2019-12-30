@@ -30,8 +30,8 @@ Auth::routes([
 
 
 //  User
-Route::get('/artists', 'UserController@artists')->name('users.artists');
-Route::get('/artists/{user}', 'UserController@artist')->name('users.artist');
+Route::get('/jammers', 'UserController@jammers')->name('users.jammers');
+Route::get('/jammers/{user}', 'UserController@jammer')->name('users.jammer');
 //  Route::get('/me', 'UserConroller@me')->name('users.me'); //  with middleware(auth)
 
 //  Jam

@@ -33934,7 +33934,7 @@ var render = function() {
                                           {
                                             attrs: {
                                               href:
-                                                "/artists/" +
+                                                "/jammers/" +
                                                 session.user.username
                                             }
                                           },
@@ -33961,7 +33961,7 @@ var render = function() {
                                           "is-size-6 has-text-primary",
                                         attrs: {
                                           href:
-                                            "/artists/" + session.user.username
+                                            "/jammers/" + session.user.username
                                         }
                                       },
                                       [
