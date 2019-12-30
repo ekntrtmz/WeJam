@@ -16,12 +16,14 @@
                           <div class="media">
                             <div class="media-left">
                               <figure class="image is-48x48">
-                                <img class="is-rounded" src="/img/96x96.png" alt="Placeholder image">
+                                <a :href="'/artists/'+session.user.username">
+                                  <img class="is-rounded host-image" src="/img/96x96.png" alt="Placeholder image">
+                                </a>
                               </figure>
                             </div>
                             <div class="media-content">
                               <a :href="'/artists/'+session.user.username" class="is-size-6 has-text-primary"> ~{{session.user.username}}<br></a>
-                              <p class="subtitle is-6"><span class="is-size-7">[Rating]</span></p>
+                              <p class="subtitle is-6"><span class="is-size-7">Jam Host</span></p>
                             </div>
                           </div>
                         </div>
@@ -35,10 +37,34 @@
                         <span v-if="session.jam_session_space == 'indoor'" class="tag is-warning is-light">indoor</span>
                         <span v-if="session.jam_session_space == 'outdoor'" class="tag is-success is-light">outdoor</span>
                       </div>
-                      <p class="title jam-title">{{session.title}}</p>
+                      <p class="title jam-title"><a :href="'/jam-sessions/'+session.slug">{{session.title}}</a></p>
                       <p class="subtitle">{{session.descr}}</p>
                     </div>
                     <div class="column is-4">
+                      <div class="field has-addons jam-actions">
+                        <p class="control">
+                            <a href="#yaman" class="button yaman-button">
+                              <span class="yaman-icon"></span>
+                              <span>Yaman</span>
+                            </a>
+                        </p>
+                        <p class="control">
+                          <a href="#perform" class="button">
+                            <span class="icon is-small">
+                              <i class="fas fa-guitar"></i>
+                            </span>
+                            <span>Perform</span>
+                          </a>
+                        </p>
+                        <p class="control is-last-addon">
+                          <a href="#join" class="button is-fullwidth">
+                            <span class="icon is-small">
+                              <i class="fas fa-user-plus"></i>
+                            </span>
+                            <span>Join</span>
+                          </a>
+                        </p>
+                      </div>
                       <nav class="level jam-info">
                         <div class="level-item has-text-centered">
                           <div>
@@ -60,45 +86,22 @@
                         </div>
                       </nav>
                       <div class="column is-12">
-                      <div class="columns is-multiline is-mobile  jam-meta-wrapper">
-                        <div class="jam-meta-box column is-6">
-                          <b-icon type="small" icon="calendar-day"></b-icon>
-                          <span>{{ session.jam_session_date }}</span>
-                        </div>
-                        <div class="jam-meta-box column is-6">
-                          <b-icon icon="clock" ></b-icon>
-                          <span>{{ session.jam_session_time }}</span>
-                        </div>
-                        <div class="jam-meta-box column is-12">
-                          <b-icon icon="map-marker-alt" ></b-icon>
-                          <span>{{ session.jam_session_location }}</span>
+                        <div class="columns is-multiline is-mobile is-variable jam-meta-wrapper">
+                          <div class="jam-meta-box column is-6">
+                            <b-icon type="small" icon="calendar-day"></b-icon>
+                            <span>{{ session.jam_session_date }}</span>
+                          </div>
+                          <div class="jam-meta-box column is-6">
+                            <b-icon icon="clock" ></b-icon>
+                            <span>{{ session.jam_session_time }}</span>
+                          </div>
+                          <div class="jam-meta-box column is-12">
+                            <b-icon icon="map-marker-alt" ></b-icon>
+                            <span>{{ session.jam_session_location }}</span>
+                          </div>
                         </div>
                       </div>
-                      </div>
-                      <div class="field has-addons jam-actions">
-                        <p class="control">
-                          <a href="#yaman" class="button yaman-button">
-                            <span class="yaman-icon"></span>
-                            <span>Yaman</span>
-                          </a>
-                        </p>
-                        <p class="control">
-                          <a href="#join" class="button">
-                            <span class="icon is-small">
-                              <i class="fas fa-user-plus"></i>
-                            </span>
-                            <span>Join</span>
-                          </a>
-                        </p>
-                        <p class="control">
-                          <a :href="'/jam-sessions/'+session.slug" class="button">
-                            <span class="icon is-small">
-                              <i class="fas fa-question-circle"></i>
-                            </span>
-                            <span>Details</span>
-                          </a>
-                        </p>
-                      </div>
+                      <a :href="'/jam-sessions/'+session.slug" class="button is-fullwidth is-info is-rounded">Jam Details</a>
                     </div>
                   </div>
                 </div>
@@ -135,7 +138,7 @@ export default {
 
   &.secret-jam {
     .box {
-      border: 5px solid #ba1200;
+      border: 3px solid #ba1200;
       box-sizing: border-box;
     }
 
@@ -154,6 +157,13 @@ export default {
 
 .jam-title {
   text-transform: uppercase;
+
+  a {
+    color: #363636;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .jam-image {
@@ -167,6 +177,13 @@ export default {
   background:rgba(255,255,255,0.9);
   width: 100%;
   padding: 10px;
+}
+
+.host-image {
+  border: 1px solid transparent;
+  &:hover {
+    border-color: #ba1200;
+  }
 }
 
 .jam-info {
@@ -189,8 +206,8 @@ export default {
   }
 }
 
-.jam-actions {
-  margin-top: 15px;
+.is-last-addon {
+  width: 100%;
 }
 
 .yaman-icon {
