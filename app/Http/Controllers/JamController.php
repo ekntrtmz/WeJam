@@ -98,7 +98,8 @@ class JamController extends Controller
         }
         $jam->load('city', 'user');
 
-        return $jam;
+        //return $jam;
+        return view('jams.session')->with(compact('jam'));
 
     }
 
