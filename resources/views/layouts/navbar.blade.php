@@ -19,7 +19,9 @@
                 <a href="/cities" class="navbar-item {{ request()->routeIs('cities.*') ? 'is-active' : ''}}">
                     Cities
                 </a>
-
+                <a href="/jams" class="navbar-item {{ request()->routeIs('jams.*') ? 'is-active' : ''}}">
+                    Jams
+                </a>
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                     More

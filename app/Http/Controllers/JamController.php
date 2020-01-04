@@ -84,6 +84,11 @@ class JamController extends Controller
         //
     }
 
+    public function jams() {
+
+        return Jam::all();
+    }
+
     public function jam_sessions () {
 
         $query = Jam::where('type', '=', 'jam_session')->get();

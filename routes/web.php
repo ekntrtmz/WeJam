@@ -30,6 +30,7 @@ Auth::routes([
 
 
 //  Jam
+Route::get('jams', 'JamController@jams')->name('jams.jams');
 Route::get('/jam-sessions', 'JamController@jam_sessions')->name('jams.jam_sessions');
 Route::get('/jam-sessions/{jam}', 'JamController@jam_session')->name('jams.jam_session');
 
