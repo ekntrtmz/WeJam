@@ -4,7 +4,7 @@
 
 ## About WeJam
 
-WeJam is the platfform to connect with real people and real moments.
+WeJam is the artistic platfform to connect with real people and real moments.
 
 ## Roadmap
 
